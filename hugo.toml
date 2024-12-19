@@ -1,7 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'AI by Mai'
-theme = 'hugo-theme-cactus'
+
+
 
 [params]
 
@@ -12,3 +13,4 @@ theme = 'hugo-theme-cactus'
   tagsOverview = true # show tags overview by default.
   showProjectsList = true # show projects list by default (if projects data file exists).
   projectsUrl = "https://github.com/gohugoio" # title link for projects list
+  googleAnalytics = ""
