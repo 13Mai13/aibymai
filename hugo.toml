@@ -3,14 +3,32 @@ languageCode = 'en-us'
 title = 'AI by Mai'
 
 
-
 [params]
 
   description = "AI by Mai is under construction at the moment."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
-  tagsOverview = true # show tags overview by default.
   showProjectsList = true # show projects list by default (if projects data file exists).
   projectsUrl = "https://github.com/gohugoio" # title link for projects list
   googleAnalytics = ""
+
+  [[menu.main]]
+    name = 'Home'
+    url = '/'
+  [[menu.main]]
+    name = 'Writtings'
+    url = '/posts'
+  [[menu.main]]
+    name = 'Tags'
+    url = '/tags'
+  [[menu.main]]
+    name = 'About'
+    url = '/about'
+
+  [[params.social]]
+    name = 'github'
+    link = 'https://github.com/13Mai13'
+  [[params.social]]
+    name = 'linkedIn'
+    link = 'https://www.linkedin.com/in/maialen-berrondo-43197b94/'

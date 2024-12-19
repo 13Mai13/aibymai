@@ -6,6 +6,14 @@
     <description>Recent content on AI by Mai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>This is an example post</title>
+      <link>http://localhost:1313/posts/sample_post/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sample_post/</guid>
+      <description>&lt;p&gt;This is an example&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
