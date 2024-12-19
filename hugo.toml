@@ -25,6 +25,9 @@ title = 'AI by Mai'
   [[menu.main]]
     name = 'About'
     url = '/about'
+  [[menu.phd]]
+    name = 'PhD'
+    url = '/phd'
 
   [[params.social]]
     name = 'github'

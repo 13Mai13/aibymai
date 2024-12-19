@@ -6,14 +6,14 @@
 
   {{ partial "page_nav.html" . }}
 
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
     <header>
       <h1 class="posttitle" itemprop="name headline">
         {{ .Title }}
       </h1>
       <div class="meta">
         {{ if (or (isset .Site "author") (isset .Site "title"))}}
-        <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
           <span itemprop="name">
             {{ if isset .Site "author" }}
               {{ .Site.Author }}

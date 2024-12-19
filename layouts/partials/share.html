@@ -7,7 +7,7 @@
   {{ end }}
   {{ $description := .Scratch.Get "description" }}
   <li>
-    <a class="icon" href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" aria-label="Facebook">
+    <a class="icon" href="https://www.facebook.com/sharer.php?u={{ .Permalink }}" aria-label="Facebook">
       <i class="fab fa-facebook {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
@@ -17,7 +17,7 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" aria-label="Linkedin">
+    <a class="icon" href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" aria-label="Linkedin">
       <i class="fab fa-linkedin {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
@@ -37,12 +37,12 @@
     </a>
   </li>
   <li>
-    <a class="icon" href="http://reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" aria-label="reddit">
+    <a class="icon" href="https://reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" aria-label="reddit">
       <i class="fab fa-reddit {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="http://www.tumblr.com/share/link?url={{ .Permalink }}&name={{ .Title }}&description={{ $description }}" aria-label="Tumblr">
+    <a class="icon" href="https://www.tumblr.com/share/link?url={{ .Permalink }}&name={{ .Title }}&description={{ $description }}" aria-label="Tumblr">
       <i class="fab fa-tumblr {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>

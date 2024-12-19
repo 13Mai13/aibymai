@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom">
   <channel>
     <title>About Me on AI by Mai</title>
-    <link>http://localhost:1313/tags/about-me/</link>
+    <link>https://localhost:1313/tags/about-me/</link>
     <description>Recent content in About Me on AI by Mai</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://localhost:1313/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://localhost:1313/about/</link>
       <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://localhost:1313/about/</guid>
       <description>&lt;p&gt;This is the page where I explain who I am.&lt;/p&gt;</description>
     </item>
   </channel>
