@@ -1,29 +1,14 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'AI by Mai'
-theme = 'archie'
+theme = 'hugo-theme-cactus'
 
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/13Mai13"
+[params]
 
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 4
+  description = "AI by Mai is under construction at the moment."
+  mainSection = "posts" # your main section
+  showAllPostsOnHomePage = false # default
+  postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
+  tagsOverview = true # show tags overview by default.
+  showProjectsList = true # show projects list by default (if projects data file exists).
+  projectsUrl = "https://github.com/gohugoio" # title link for projects list
