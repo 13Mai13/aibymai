@@ -4,48 +4,49 @@
   {{ $description := .Description | default .Summary }}
   
   <li>
-    <a class="icon" href="https://www.facebook.com/sharer.php?u={{ .Permalink | urlEncode }}" aria-label="Facebook">
+    <a class="icon" href="https://www.facebook.com/sharer.php?u={{ .Permalink | urlize }}" aria-label="Facebook">
       <i class="fab fa-facebook {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://twitter.com/share?url={{ .Permalink | urlEncode }}&text={{ .Title | urlQueryEscape }}" aria-label="Twitter">
+    <a class="icon" href="https://twitter.com/share?url={{ .Permalink | urlize }}&text={{ .Title | urlize }}" aria-label="Twitter">
       <i class="fab fa-twitter {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://www.linkedin.com/shareArticle?url={{ .Permalink | urlEncode }}&title={{ .Title | urlQueryEscape }}" aria-label="LinkedIn">
+    <a class="icon" href="https://www.linkedin.com/shareArticle?url={{ .Permalink | urlize }}&title={{ .Title | urlize }}" aria-label="LinkedIn">
       <i class="fab fa-linkedin {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url={{ .Permalink | urlEncode }}&is_video=false&description={{ .Title | urlQueryEscape }}" aria-label="Pinterest">
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url={{ .Permalink | urlize }}&is_video=false&description={{ .Title | urlize }}" aria-label="Pinterest">
       <i class="fab fa-pinterest {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="mailto:?subject={{ .Title | urlQueryEscape }}&body=Check out this article: {{ .Permalink | urlEncode }}" aria-label="Email">
+    <a class="icon" href="mailto:?subject={{ .Title | urlize }}&body=Check out this article: {{ .Permalink | urlize }}" aria-label="Email">
       <i class="fas fa-envelope {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://getpocket.com/save?url={{ .Permalink | urlEncode }}&title={{ .Title | urlQueryEscape }}" aria-label="Pocket">
+    <a class="icon" href="https://getpocket.com/save?url={{ .Permalink | urlize }}&title={{ .Title | urlize }}" aria-label="Pocket">
       <i class="fab fa-get-pocket {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://reddit.com/submit?url={{ .Permalink | urlEncode }}&title={{ .Title | urlQueryEscape }}" aria-label="Reddit">
+    <a class="icon" href="https://reddit.com/submit?url={{ .Permalink | urlize }}&title={{ .Title | urlize }}" aria-label="Reddit">
       <i class="fab fa-reddit {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://www.tumblr.com/share/link?url={{ .Permalink | urlEncode }}&name={{ .Title | urlQueryEscape }}&description={{ $description | urlQueryEscape }}" aria-label="Tumblr">
+    <a class="icon" href="https://www.tumblr.com/share/link?url={{ .Permalink | urlize }}&name={{ .Title | urlize }}&description={{ $description | urlize }}" aria-label="Tumblr">
       <i class="fab fa-tumblr {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
   <li>
-    <a class="icon" href="https://news.ycombinator.com/submitlink?u={{ .Permalink | urlEncode }}&t={{ .Title | urlQueryEscape }}" aria-label="Hacker News">
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u={{ .Permalink | urlize }}&t={{ .Title | urlize }}" aria-label="Hacker News">
       <i class="fab fa-hacker-news {{ $icon_class_name }}" aria-hidden="true"></i>
     </a>
   </li>
 </ul>
+
