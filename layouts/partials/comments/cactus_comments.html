@@ -1,11 +1,22 @@
 <div id="cactus-comments-thread">
   <script>
-  initComments({
-    node: document.getElementById("cactus-comments-thread"),
-    defaultHomeserverUrl: '{{ default "https://matrix.cactus.chat:8448" .Site.Params.Comments.Cactuscomments.ServerUrl }}',
-    serverName: '{{ default "cactus.chat" .Site.Params.Comments.Cactuscomments.ServerName }}',
-    siteName: "{{ .Site.Params.Comments.Cactuscomments.SiteName }}",
-    commentSectionId: "{{ .RelPermalink }}"
-  })
-</script>
+    (function() {
+      // Retrieve the container for the comments thread
+      const container = document.getElementById("cactus-comments-thread");
+
+      if (!container) {
+        console.error("Cactus Comments container not found.");
+        return;
+      }
+
+      // Initialize Cactus Comments with dynamic configuration
+      initComments({
+        node: container,
+        defaultHomeserverUrl: "{{ .Site.Params.Comments.Cactuscomments.ServerUrl | default `https://matrix.cactus.chat:8448` }}",
+        serverName: "{{ .Site.Params.Comments.Cactuscomments.ServerName | default `cactus.chat` }}",
+        siteName: "{{ .Site.Params.Comments.Cactuscomments.SiteName | default .Site.Title }}",
+        commentSectionId: "{{ .RelPermalink }}"
+      });
+    })();
+  </script>
 </div>

@@ -1,11 +1,11 @@
 <header id="header">
-  <a href="{{ .Site.BaseURL }}">
+  <a href="{{ .Site.BaseURL | urlEncode }}">
     {{ if .Site.Params.gravatar }}
-      <div id="logo" style="background-image: url(https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar }}?s=100&d=identicon)"></div>
+      <div id="logo" style="background-image: url(https://www.gravatar.com/avatar/{{ .Site.Params.gravatar | md5 }}?s=100&d=identicon);"></div>
     {{ else if .Site.Params.logo }}
-      <div id="logo" style="background-image: url({{ .Site.Params.logo | relURL }})"></div>
+      <div id="logo" style="background-image: url({{ .Site.Params.logo | relURL }});"></div>
     {{ else }}
-      <div id="logo" style="background-image: url({{ "images/logo.png" | relURL }})"></div>
+      <div id="logo" style="background-image: url({{ "images/logo.png" | relURL }});"></div>
     {{ end }}
     <div id="title">
       <h1>{{ .Site.Title }}</h1>
@@ -14,10 +14,14 @@
   <div id="nav">
     <ul>
       <li class="icon">
-        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Menu">
+          <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
       </li>
       {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <li>
+          <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        </li>
       {{ end }}
     </ul>
   </div>

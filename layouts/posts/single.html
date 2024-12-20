@@ -6,14 +6,14 @@
 
   {{ partial "page_nav.html" . }}
 
-  <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+  <article class="post" itemscope itemtype="{{ "schema.org/BlogPosting" | absURL }}">
     <header>
       <h1 class="posttitle" itemprop="name headline">
         {{ .Title }}
       </h1>
       <div class="meta">
         {{ if (or (isset .Site "author") (isset .Site "title"))}}
-        <span class="author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span class="author" itemprop="author" itemscope itemtype="{{ "schema.org/Person" | absURL }}">
           <span itemprop="name">
             {{ if isset .Site "author" }}
               {{ .Site.Author }}
@@ -31,7 +31,7 @@
           {{ end }}
         </div>
         {{ $showReadTime := .Site.Params.showReadTime | default false }}
-        {{if $showReadTime}}
+        {{ if $showReadTime }}
         <div class="article-read-time">
           <i class="far fa-clock"></i>
           {{ $readTime := math.Round (div (countwords .Content) 220.0) }}
@@ -74,7 +74,7 @@
     </div>
     {{ end }}
     <div class="content" itemprop="articleBody">
-      {{ .Content}}
+      {{ .Content }}
     </div>
   </article>
 
@@ -90,8 +90,8 @@
 <link rel="stylesheet" href={{ "/lib/font-awesome/css/all.min.css" | relURL }}>
 <script src={{ "/lib/jquery/jquery.min.js" | relURL }}></script>
 <script src={{ "/js/main.js" | relURL }}></script>
-{{ if not (isset site.Params "disablecopy") }}
-<script src={{ "js/code-copy.js"  | relURL }}></script>
+{{ if not (isset .Site.Params "disablecopy") }}
+<script src={{ "js/code-copy.js" | relURL }}></script>
 {{ end }}
 {{ $mathjax := false }}
 {{ if isset .Params "mathjax" }}
@@ -111,7 +111,8 @@
   };
 </script>
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  src="{{ "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" | absURL }}">
 </script>
 {{ end }}
 </html>
+
