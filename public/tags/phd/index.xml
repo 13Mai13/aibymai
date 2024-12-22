@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PhD on AI by Mai</title>
+    <link>http://localhost:1313/tags/phd/</link>
+    <description>Recent content in PhD on AI by Mai</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/phd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PhD</title>
+      <link>http://localhost:1313/phd/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/phd/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-my-phd-research-section&#34;&gt;Welcome to My PhD Research Section&lt;/h1&gt;&#xA;&lt;p&gt;Greetings! This is my PhD journey in Applied Artificial Intelligence, with a keen focus on the critical sub-field of fake news detection. My interest in this area was sparked during my master&amp;rsquo;s studies when I delved into the book &lt;a href=&#34;https://www.amazon.es/Social-Physics-Spread-Lessons-Science/dp/1594205655&#34;&gt;Social Physics&lt;/a&gt;. It was at that moment when I realized that fake news detection would become my primary research focus.&lt;/p&gt;&#xA;&lt;p&gt;Given the format of my master&amp;rsquo;s thesis – structured by publications – I am excited to share all my research findings and advancements in this space through this platform.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
