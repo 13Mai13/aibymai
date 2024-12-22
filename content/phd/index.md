@@ -2,7 +2,7 @@
 title: PhD
 date: 2024-12-19
 tags:
-    - PhD Home
+    - PhD
 ---
 
 # Welcome to My PhD Research Section
