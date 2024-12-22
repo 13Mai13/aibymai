@@ -10,9 +10,7 @@ title = 'AI by Mai'
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   showProjectsList = true # show projects list by default (if projects data file exists).
-  projectsUrl = "https://github.com/gohugoio" # title link for projects list
-  googleAnalytics = ""
-
+  
   [[menu.main]]
     name = 'Home'
     url = '/'
