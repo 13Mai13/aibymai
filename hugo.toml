@@ -5,7 +5,7 @@ title = 'AI by Mai'
 
 [params]
 
-  description = "AI by Mai is under construction at the moment."
+  description = "Welcome to AI by Mai 🏄‍♀️"
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
