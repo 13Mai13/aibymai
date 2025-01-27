@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link rel="preload" href="http://localhost:1313/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="http://localhost:1313/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="http://localhost:1313/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="http://localhost:1313/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Is complexity in machine learning systems justified? | AI by Mai</title>
+  <link rel="canonical" href="http://localhost:1313/posts/complexity_and_congnitive_load/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta property="og:url" content="http://localhost:1313/posts/complexity_and_congnitive_load/">
+  <meta property="og:site_name" content="AI by Mai">
+  <meta property="og:title" content="Is complexity in machine learning systems justified?">
+  <meta property="og:description" content="Machine learning systems are becoming increasingly sophisticated, and a critical question emerges: Is the growing complexity of these systems truly justified, or are we building solutions that exceed our cognitive capacity to understand and maintain them?
+The concept of cognitive load, introduced by John Sweller in 1988, suggests that our working memory can only handle a limited amount of information simultaneously. In machine learning and software development, this cognitive load refers to the mental effort required to understand, maintain, and operate systems. As systems grow in complexity, this load increases, potentially leading to reduced efficiency, higher error rates, and increased development time.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-24T00:00:00+00:00">
+    <meta property="article:tag" content="Software Design">
+    <meta property="article:tag" content="Machine Learning System Design">
+    <meta property="article:tag" content="Cognitive Load">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Is complexity in machine learning systems justified?">
+  <meta name="twitter:description" content="Machine learning systems are becoming increasingly sophisticated, and a critical question emerges: Is the growing complexity of these systems truly justified, or are we building solutions that exceed our cognitive capacity to understand and maintain them?
+The concept of cognitive load, introduced by John Sweller in 1988, suggests that our working memory can only handle a limited amount of information simultaneously. In machine learning and software development, this cognitive load refers to the mental effort required to understand, maintain, and operate systems. As systems grow in complexity, this load increases, potentially leading to reduced efficiency, higher error rates, and increased development time.">
+
+
+  
+  
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
+  
+  
+  
+<link rel="icon" type="image/png" href="http://localhost:1313/images/favicon.ico" />
+
+
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/about">About</a></li>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/posts">Writtings</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" http://localhost:1313/about/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+  
+  
+  <li>
+    <a class="icon" href="https://www.facebook.com/sharer.php?u=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f" aria-label="Facebook">
+      <i class="fab fa-facebook default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&text=is-complexity-in-machine-learning-systems-justified" aria-label="Twitter">
+      <i class="fab fa-twitter default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://www.linkedin.com/shareArticle?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&title=is-complexity-in-machine-learning-systems-justified" aria-label="LinkedIn">
+      <i class="fab fa-linkedin default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&is_video=false&description=is-complexity-in-machine-learning-systems-justified" aria-label="Pinterest">
+      <i class="fab fa-pinterest default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=is-complexity-in-machine-learning-systems-justified&body=Check out this article: http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f" aria-label="Email">
+      <i class="fas fa-envelope default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&title=is-complexity-in-machine-learning-systems-justified" aria-label="Pocket">
+      <i class="fab fa-get-pocket default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://reddit.com/submit?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&title=is-complexity-in-machine-learning-systems-justified" aria-label="Reddit">
+      <i class="fab fa-reddit default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://www.tumblr.com/share/link?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&name=is-complexity-in-machine-learning-systems-justified&description=pmachine-learning-systems-are-becoming-increasingly-sophisticated-and-a-critical-question-emerges-is-the-growing-complexity-of-these-systems-truly-justified-or-are-we-building-solutions-that-exceed-our-cognitive-capacity-to-understand-and-maintain-them%2fp-pthe-concept-of-a-hrefhttps%2f%2fthevaluable.dev%2fcognitive-load-theory-software-developer%2fcognitive-load%2fa-introduced-by-john-sweller-in-1988-suggests-that-our-working-memory-can-only-handle-a-limited-amount-of-information-simultaneously.-in-machine-learning-and-software-development-this-cognitive-load-refers-to-the-mental-effort-required-to-understand-maintain-and-operate-systems.-as-systems-grow-in-complexity-this-load-increases-potentially-leading-to-reduced-efficiency-higher-error-rates-and-increased-development-time.%2fp" aria-label="Tumblr">
+      <i class="fab fa-tumblr default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&t=is-complexity-in-machine-learning-systems-justified" aria-label="Hacker News">
+      <i class="fab fa-hacker-news default-icon-class" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+
+    </div>
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sources-of-cognitive-load-in-modern-systems">Sources of Cognitive Load in Modern Systems</a>
+      <ul>
+        <li><a href="#machine-learning-systems">Machine Learning Systems</a></li>
+        <li><a href="#software-design">Software Design</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-complexity-becomes-problematic">When Complexity Becomes Problematic</a>
+      <ul>
+        <li><a href="#anti-patterns-in-machine-learning">Anti-patterns in Machine Learning</a></li>
+        <li><a href="#software-engineering-pitfalls">Software Engineering Pitfalls</a></li>
+      </ul>
+    </li>
+    <li><a href="#managing-organized-complexity">Managing Organized Complexity</a></li>
+    <li><a href="#practical-advice-for-practitioners">Practical Advice for Practitioners</a></li>
+  </ul>
+</nav>
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://localhost:1313/schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Is complexity in machine learning systems justified?
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2025-01-24 00:00:00 &#43;0000 UTC" itemprop="datePublished">2025-01-24</time>
+          
+        </div>
+        
+        
+        
+        
+        <div class="article-tag">
+            <i class="fas fa-tag"></i>
+            
+            
+            <a class="tag-link" href="/tags/software-design" rel="tag">Software Design</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/machine-learning-system-design" rel="tag">Machine Learning System Design</a>
+            
+             ,  
+            <a class="tag-link" href="/tags/cognitive-load" rel="tag">Cognitive Load</a>
+            
+        </div>
+        
+      </div>
+    </header>
+
+  
+    
+    <div class="content" itemprop="articleBody">
+      <p>Machine learning systems are becoming increasingly sophisticated, and a critical question emerges: Is the growing complexity of these systems truly justified, or are we building solutions that exceed our cognitive capacity to understand and maintain them?</p>
+<p>The concept of <a href="https://thevaluable.dev/cognitive-load-theory-software-developer/">cognitive load</a>, introduced by John Sweller in 1988, suggests that our working memory can only handle a limited amount of information simultaneously. In machine learning and software development, this cognitive load refers to the mental effort required to understand, maintain, and operate systems. As systems grow in complexity, this load increases, potentially leading to reduced efficiency, higher error rates, and increased development time.</p>
+<h2 id="sources-of-cognitive-load-in-modern-systems">Sources of Cognitive Load in Modern Systems</h2>
+<h3 id="machine-learning-systems">Machine Learning Systems</h3>
+<p>Modern deep learning architectures like GPT-4 or PaLM, which contain billions of parameters, introduce significant cognitive load through complex model architectures with numerous hyperparameters, intricate data preprocessing pipelines, multiple model ensembles, and difficult-to-interpret model behaviors.</p>
+<h3 id="software-design">Software Design</h3>
+<p>The complexity isn&rsquo;t limited to ML components. As detailed in <a href="https://www.youtube.com/watch?v=bmSAYlu0NcY">A Philosophy of Software Design</a>, common sources include over-engineered architecture patterns, unnecessary abstraction layers, complex dependency graphs, and inadequate documentation.</p>
+<h2 id="when-complexity-becomes-problematic">When Complexity Becomes Problematic</h2>
+<h3 id="anti-patterns-in-machine-learning">Anti-patterns in Machine Learning</h3>
+<p>Consider implementing a deep learning model for a simple classification task that could be solved with basic statistical methods. For example, using a transformer model to categorize customer feedback when a simple keyword-based approach would suffice. As noted in <a href="https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html">Hidden Technical Debt in Machine Learning Systems</a>, such decisions can lead to unnecessary maintenance burden.</p>
+<h3 id="software-engineering-pitfalls">Software Engineering Pitfalls</h3>
+<p>Creating a microservices architecture for a small application that could be effectively managed as a monolith exemplifies unnecessary complexity. This introduces overhead in deployment, monitoring, and maintenance while providing little benefit for the scale of the project.</p>
+<h2 id="managing-organized-complexity">Managing Organized Complexity</h2>
+<p>While some complexity is inevitable in modern systems, it should be organized and justified. <a href="https://www.amazon.com/Living-Complexity-Donald-Norman/dp/0262014866">Donald Norman&rsquo;s work on complexity</a> suggests that systems can be complex but structured in comprehensible ways. This means that each layer of complexity should add measurable value, systems should be modular and well-documented, components should be testable and maintainable, and the architecture should scale with business needs.</p>
+<h2 id="practical-advice-for-practitioners">Practical Advice for Practitioners</h2>
+<p>Before implementing the latest trends in modeling or the shiniest architecture, remember that approximately 80% of software costs come from maintenance and operations. An elegant solution is one that you understand top to bottom and are fully aware of how it works.</p>
+<p>When designing your next system, ask yourself two crucial questions:</p>
+<ol>
+<li>What is the minimum piece of software + model that would allow me to ship this functionality?</li>
+<li>If I ship that minimal version, how much effort would improvements require?</li>
+</ol>
+<p>Be honest with these answers. If you can solve the problem in a simpler way and follow an iterative approach, your initial design might be introducing unnecessary complexity.</p>
+<p>For a deeper dive into managing cognitive load in software development, check out this excellent <a href="https://github.com/zakirullin/cognitive-load">GitHub repository on cognitive load</a>.</p>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/about">About</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/posts">Writtings</a></li>
+        
+      </ul>
+    </div>
+
+    
+    <div id="toc-footer" style="display: none">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#sources-of-cognitive-load-in-modern-systems">Sources of Cognitive Load in Modern Systems</a>
+      <ul>
+        <li><a href="#machine-learning-systems">Machine Learning Systems</a></li>
+        <li><a href="#software-design">Software Design</a></li>
+      </ul>
+    </li>
+    <li><a href="#when-complexity-becomes-problematic">When Complexity Becomes Problematic</a>
+      <ul>
+        <li><a href="#anti-patterns-in-machine-learning">Anti-patterns in Machine Learning</a></li>
+        <li><a href="#software-engineering-pitfalls">Software Engineering Pitfalls</a></li>
+      </ul>
+    </li>
+    <li><a href="#managing-organized-complexity">Managing Organized Complexity</a></li>
+    <li><a href="#practical-advice-for-practitioners">Practical Advice for Practitioners</a></li>
+  </ul>
+</nav>
+    </div>
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+  
+  
+  <li>
+    <a class="icon" href="https://www.facebook.com/sharer.php?u=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&text=is-complexity-in-machine-learning-systems-justified" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://www.linkedin.com/shareArticle?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&title=is-complexity-in-machine-learning-systems-justified" aria-label="LinkedIn">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&is_video=false&description=is-complexity-in-machine-learning-systems-justified" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=is-complexity-in-machine-learning-systems-justified&body=Check out this article: http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&title=is-complexity-in-machine-learning-systems-justified" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://reddit.com/submit?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&title=is-complexity-in-machine-learning-systems-justified" aria-label="Reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://www.tumblr.com/share/link?url=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&name=is-complexity-in-machine-learning-systems-justified&description=pmachine-learning-systems-are-becoming-increasingly-sophisticated-and-a-critical-question-emerges-is-the-growing-complexity-of-these-systems-truly-justified-or-are-we-building-solutions-that-exceed-our-cognitive-capacity-to-understand-and-maintain-them%2fp-pthe-concept-of-a-hrefhttps%2f%2fthevaluable.dev%2fcognitive-load-theory-software-developer%2fcognitive-load%2fa-introduced-by-john-sweller-in-1988-suggests-that-our-working-memory-can-only-handle-a-limited-amount-of-information-simultaneously.-in-machine-learning-and-software-development-this-cognitive-load-refers-to-the-mental-effort-required-to-understand-maintain-and-operate-systems.-as-systems-grow-in-complexity-this-load-increases-potentially-leading-to-reduced-efficiency-higher-error-rates-and-increased-development-time.%2fp" aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=http%2f%2flocalhost1313%2fposts%2fcomplexity_and_congnitive_load%2f&t=is-complexity-in-machine-learning-systems-justified" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="toc-toggle" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;" aria-label="TOC">
+          <i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2025  AI by Mai 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/about">About</a></li>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/posts">Writtings</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
+
+
+
+</html>
+
