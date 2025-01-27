@@ -32,6 +32,4 @@ When I’m not coding or mentoring, you’ll find me exploring open-source proje
 
 The main hobbie I have for this year is surfing 🏄‍♀️! Where I'm trying to get better every day
 
-Let’s keep it simple, authentic, and fun. Whether you’re an AI enthusiast, a fellow engineer, or just AI-curious, I hope this blog inspires you to dig deeper into the world of AI.
-
 Stay tuned, and let’s explore this AI journey together!
