@@ -19,4 +19,5 @@ Deep dives into graph algorithms, LLMs, and optimization
 # 🚀 Beyond Tech
 
 When not coding, I explore open-source projects and am currently learning to surf 🏄‍♀️!
+
 Let's explore AI together!
