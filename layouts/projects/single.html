@@ -3,9 +3,8 @@
   {{ if .Params.github }}
   <div class="github-header" style="margin-bottom: 2rem; padding: 1rem; border-radius: 8px; background-color: #f6f8fa; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
     <span>If you want to check the code for this project:</span>
-    <a href="{{ .Params.github }}" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #24292e;">
-      <i class="fab fa-github" style="font-size: 1.5rem;"></i>
-      <span>View on GitHub</span>
+    <a href="{{ .Params.github }}" class="social-icon" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #24292e;">
+      <i class="fab fa-github" style="font-size: 1.25rem;"></i>
     </a>
   </div>
   {{ end }}

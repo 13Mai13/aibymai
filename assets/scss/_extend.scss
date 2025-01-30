@@ -117,3 +117,10 @@ td {
   padding: 0 8px;
   border-bottom: none;
 }
+.social-icon {
+  background-image: none !important;
+  
+  &:hover, &:focus, &:active {
+    background-image: none !important;
+  }
+}
