@@ -98,13 +98,14 @@
       {{ $projectsUrl = .Site.Params.projectsUrl }}
     {{ end }}
   <section id="projects">
-    <span class="h1"><a href="{{ $projectsUrl }}">Projects</a></span>
-    <ul class="project-list">
-        {{ range .Site.Data.projects.list }}
-        <li class="project-item">
-          <a href="{{ .url }}">{{ .name }}</a>: {{ .desc | markdownify }}
-        </li>
-        {{ end }}
+    <span class="h1"><a href="/projects">Projects</a></span>
+    <ul class="post-list">
+      {{ range first 5 (where .Site.RegularPages "Type" "projects").ByDate.Reverse }}
+      <li class="post-item">
+        <div class="meta"><time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time></div>
+        <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
+      </li>
+      {{ end }}
     </ul>
   </section>
   {{ end }}
