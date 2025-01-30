@@ -2,9 +2,7 @@ baseURL = "https://www.aibymai.dev/"
 languageCode = 'en-us'
 title = 'AI by Mai'
 
-
 [params]
-
   description = "Welcome to AI by Mai 🏄‍♀️"
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
