@@ -14,15 +14,24 @@ title = 'AI by Mai'
   [[menu.main]]
     name = 'Home'
     url = '/'
-  [[menu.main]]
-    name = 'Writtings'
-    url = '/posts'
-  [[menu.main]]
-    name = 'Tags'
-    url = '/tags'
+    weight = 1
   [[menu.main]]
     name = 'About'
     url = '/about'
+    weight = 2
+  [[menu.main]]
+    name = 'Writtings'
+    url = '/posts'
+    weight = 3
+  [[menu.main]]
+    name = 'Projects'
+    url = '/projects'
+    weight = 4
+  [[menu.main]]
+    name = 'Tags'
+    url = '/tags'
+    weight = 5
+
 
   [[params.social]]
     name = 'github'
