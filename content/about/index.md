@@ -11,10 +11,13 @@ Hi! I'm Mai, a Staff Software Engineer passionate about AI. At "AI by Mai," I br
 
 # 💡 What I Write About
 
-AI concepts and trends in plain language
-Software engineering best practices
-Hands-on projects with various programming languages
-Deep dives into graph algorithms, LLMs, and optimization
+* AI concepts and trends in plain language
+
+* Software engineering best practices
+
+* Hands-on projects with various programming languages
+
+* Deep dives: graph algorithms, LLMs, search, optimization or any other topic I may find intersting
 
 # 🚀 Beyond Tech
 
