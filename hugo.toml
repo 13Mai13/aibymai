@@ -18,7 +18,7 @@ title = 'AI by Mai'
     url = '/about'
     weight = 2
   [[menu.main]]
-    name = 'Writtings'
+    name = 'Writings'
     url = '/posts'
     weight = 3
   [[menu.main]]
@@ -26,9 +26,13 @@ title = 'AI by Mai'
     url = '/projects'
     weight = 4
   [[menu.main]]
+    name = 'Deep Dives'
+    url = '/deep-dives'
+    weight = 5
+  [[menu.main]]
     name = 'Tags'
     url = '/tags'
-    weight = 5
+    weight = 6
 
 
   [[params.social]]
