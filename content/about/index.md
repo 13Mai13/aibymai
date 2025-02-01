@@ -17,7 +17,7 @@ Hi! I'm Mai, a Staff Software Engineer passionate about AI. At "AI by Mai," I br
 
 * Hands-on projects with various programming languages
 
-* Deep dives: graph algorithms, LLMs, search, optimization or any other topic I may find intersting
+* Deep dives: graph algorithms, LLMs, search, optimization or any other topic I may find interesting
 
 # 🚀 Beyond Tech
 
