@@ -17,7 +17,7 @@ This isn't just theoretical anxiety. The concept of [cognitive load](https://the
 
 On the modeling side, I've seen countless "proofs of concept" that made me question what we even mean by POC these days. I've watched teams propose incredibly sophisticated architectures right from the start, or pitch trendy tech that's completely disconnected from their existing stack and capabilities. [Hidden Technical Debt in Machine Learning Systems](https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html) talks about the maintenace burden of this type of decisions, but we keep making them anyway.
 
-Here's a key sign I've learned to spot after sitting through dozens of these proposals: Ask about model explainability. If the team Here's a key sign I've learned to spot after sitting through dozens of these proposals: Ask about model explainability. If the team starts shuffling in their seats and can't clearly explain why they're using a complex neural net with 100 features for something that could be solved with linear regression and PCA, you're probably looking at unnecessary complexity. I've seen this pattern repeat so many times - teams jumping straight to the most complex solution without first proving why simpler approaches wouldn't work.
+Here's a key sign I've learned to spot after sitting through dozens of these proposals: Ask about model explainability. If the team starts shuffling in their seats and can't clearly explain why they're using a complex neural net with 100 features for something that could be solved with linear regression and PCA, you're probably looking at unnecessary complexity. I've seen this pattern repeat so many times - teams jumping straight to the most complex solution without first proving why simpler approaches wouldn't work.
 
 A design doc can be a lifesaver here. I'm not suggesting you need to try every possible approach - that would be impractical. But documenting why you've discarded certain alternatives, even in a simple "Considered Approaches" section, helps both reviewers and future maintainers understand the decision-making process. I can't count how many times I've looked back at a complex implementation and thought "Why didn't we just use X?" only to find no trace of that discussion. A few bullet points explaining "We considered approach X but rejected it because of Y" can save hours of future head-scratching.
 
@@ -27,9 +27,9 @@ The complexity monster isn't just lurking in our ML components. ML systems are p
 
 {{< figure src="/images/code_complexity.png" alt="Code Complexity in one image" >}}
 
-Software engineer, also falls in the "lastest shiniest tech trap". One curious pattern I keep seeing is the overly optimistic scaling expectations. You hear things like "Let's use technology X because when we hit Y million users..." How about we first make sure anyone wants to use this feature? Following agile methodology, wouldn't it make more sense to face scaling problems when we actually have them?
+Software engineering also falls in the "latest shiniest tech trap". One curious pattern I keep seeing is the overly optimistic scaling expectations. You hear things like "Let's use technology X because when we hit Y million users..." How about we first make sure anyone wants to use this feature? Following agile methodology, wouldn't it make more sense to face scaling problems when we actually have them?
 
-If you are looking for detailed referece [A Philosophy of Software Design](https://www.youtube.com/watch?v=bmSAYlu0NcY), common sources include over-engineered architecture patterns, unnecessary abstraction layers, complex dependency graphs, and inadequate documentation.
+If you are looking for a detailed reference [A Philosophy of Software Design](https://www.youtube.com/watch?v=bmSAYlu0NcY) includes over-engineered architecture patterns, unnecessary abstraction layers, complex dependency graphs, and inadequate documentation.
 
 ## When Complexity Becomes Problematic
 
