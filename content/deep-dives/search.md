@@ -1,6 +1,7 @@
 ---
-title: "Search (Information Retrival)"
-date: 2025-02-28
+title: "Information Retrival (Search)"
+date: 2025-02-04
+tags:
+    - Information Retrival
 ---
-
-This is work in progress
+# baah

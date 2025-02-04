@@ -93,22 +93,6 @@
    {{ $showDeepDivesList = .Site.Params.showDeepDivesList }}
  {{ end }}
 
- <div style="background: #eee; padding: 10px;">
-  <h3>Deep Dives Debug (All Site Pages):</h3>
-  {{ range .Site.Pages }}
-    {{ if and (eq .Section "deep-dives") (ne .Kind "section") }}
-      <p>
-        Title: {{ .Title }} | 
-        Date: {{ .Date }} | 
-        Section: {{ .Section }} | 
-        Type: {{ .Type }} |
-        Kind: {{ .Kind }} |
-        Path: {{ .File.Path }}
-      </p>
-    {{ end }}
-  {{ end }}
-</div>
-
 <section id="deep-dives">
   <span class="h1"><a href="/deep-dives">Deep Dives</a></span>
   <ul class="post-list">
