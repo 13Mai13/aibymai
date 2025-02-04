@@ -8,6 +8,7 @@ title = 'AI by Mai'
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   showProjectsList = true # show projects list by default (if projects data file exists).
+  showDeepDivesList = true
   
   [[menu.main]]
     name = 'Home'
@@ -26,6 +27,10 @@ title = 'AI by Mai'
     url = '/projects'
     weight = 4
   [[menu.main]]
+    name = 'Deep Dives'
+    url = '/deep-dives'
+    weight = 5
+  [[menu.main]]
     name = 'Tags'
     url = '/tags'
     weight = 5
@@ -37,3 +42,10 @@ title = 'AI by Mai'
   [[params.social]]
     name = 'linkedIn'
     link = 'https://www.linkedin.com/in/maialen-berrondo-43197b94/'
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  deep-dives = "/deep-dives/:filename/"
