@@ -9,6 +9,8 @@ title = 'AI by Mai'
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   showProjectsList = true # show projects list by default (if projects data file exists).
   showDeepDivesList = true
+  deepDivesOnHomePage = 5   # controls how many deep dives show on homepage
+  showAllPostsArchive = false  # controls pagination in archive view
   
   [[menu.main]]
     name = 'Home'
@@ -46,6 +48,3 @@ title = 'AI by Mai'
 [taxonomies]
   tag = "tags"
   category = "categories"
-
-[permalinks]
-  deep-dives = "/deep-dives/:filename/"

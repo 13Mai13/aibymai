@@ -92,16 +92,29 @@
  {{ if (isset .Site.Params "showdeepdiveslist") }}
    {{ $showDeepDivesList = .Site.Params.showDeepDivesList }}
  {{ end }}
+ {{ $showDeepDivesList := false }}
+ {{ if (isset .Site.Params "showdeepdiveslist") }}
+   {{ $showDeepDivesList = .Site.Params.showDeepDivesList }}
+ {{ end }}
+ 
+ {{ if $showDeepDivesList }}
+ <section id="deep-dives">
+   <span class="h1"><a href="{{ "/deep-dives" | absURL }}">Deep Dives</a></span>
+   {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
+   {{ $mainDeepDives := (sort ( where site.RegularPages "Type" "deep-dives" ) "Date" "desc") }}
+   <ul class="post-list">
+     {{ .Scratch.Set "count" 5 }}
+     {{ if isset .Site.Params "deepdivesonhomepage" }}
+       {{ .Scratch.Set "count" .Site.Params.deepDivesOnHomePage }}
+     {{ end }}
+     {{ range (first (.Scratch.Get "count") $mainDeepDives) }}
+       <li class="post-item">
+         <div class="meta"><time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time></div>
+         <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
+       </li>
+     {{ end }}
+   </ul>
+ </section>
+ {{ end }}
 
-<section id="deep-dives">
-  <span class="h1"><a href="/deep-dives">Deep Dives</a></span>
-  <ul class="post-list">
-    {{ range where (where .Site.Pages "Section" "deep-dives") "Kind" "page" }}
-      <li class="post-item">
-        <div class="meta"><time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time></div>
-        <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
-      </li>
-    {{ end }}
-  </ul>
-</section>
 {{ end }}
