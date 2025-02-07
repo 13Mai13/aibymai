@@ -21,7 +21,23 @@ So, here I was, thinking: would RAG solve all my issues? (spoiler not at all), w
 
 ## What is "search"? 
 
-The field that studies how to give back the most relevat documents given a query is referred to as Information Retrival. Populary known as search because of of browser searchers. There are multiple appraoches to this problem, and sice this is a deep dive well talk a bit about most of them.
+The field that studies how to give back the most relevat documents given a query is referred to as Information Retrival (IR). Populary known as search because of of browser searchers. There are multiple appraoches to this problem, and sice this is a deep dive well talk a bit about most of them.
+
+{{< figure src="/images/what_is_information_retrieval.png" alt="Ilustration on what is information retrieval" >}}
+
+*A good analogy would be that information retrieval is like talking to an experienced librarian where you'd ask: "I want to know recipes with chocolate" and they'd give you "the books with the best chocolate recipes"*
 
 ### Classic Tecniques
+
+Information retrival stared 40's and 50's with the purpose of retriving academic papers. And it wasn't until the 90's where the field exploted with comertial World Wide Web. The classic tecniques define the core parts of information retrival: indexing, query processing and matching & ranking. 
+
+{{< figure src="/images/classic_ir_system.png" alt="Ilustration on a classic IR system" >}}
+
+*Note that indexing is a process that only happens when new cookbooks or books arrive, while query processing and matching and ranking happen every time there is a user request*
+
+**Indexing**: Process to make mappings between words and documents. The goal of indexing is to store the documents so retrival is quick. 
+
+**Query processing**:  Is cleaning up search queries before looking for matches. It basically analizes the user's search tearm, handles misspelling and variations and applied boolean logic (see boolean retrival below)
+
+**Matching and ranking**: The goal here is to select the documents that fit in the specified terms (matching) and select the most relevant ones according to a criteria (ranking).
 
