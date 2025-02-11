@@ -29,7 +29,7 @@ The field that studies how to give back the most relevat documents given a query
 
 ### Classic Tecniques
 
-Information retrival stared 40's and 50's with the purpose of retriving academic papers. And it wasn't until the 90's where the field exploted with comertial World Wide Web. The classic tecniques define the core parts of information retrival: indexing, query processing and matching & ranking. 
+Information retrival stared 40's and 50's with the purpose of retriving academic papers. And it wasn't until the 90's where the field exploted with comertial World Wide Web. There are three key parts that any information retrival system needs to have: indexing, query processing and matching & ranking. 
 
 {{< figure src="/images/classic_ir_system.png" alt="Ilustration on a classic IR system" >}}
 
@@ -41,3 +41,6 @@ Information retrival stared 40's and 50's with the purpose of retriving academic
 
 **Matching and ranking**: The goal here is to select the documents that fit in the specified terms (matching) and select the most relevant ones according to a criteria (ranking).
 
+When it comes to tequines various breakthroughs happened between 40's and the 90's:
+
+In idenxting, we went from inverted indexes 
