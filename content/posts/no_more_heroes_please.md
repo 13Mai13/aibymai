@@ -8,6 +8,12 @@ tags:
 
 I used to say that the only software development method I've seen successfully work is: *Incident driven development* which was basically a coping mechanism to deal with hero culture. 
 
+# What is hero culture? 
+
+Well, an image is better than words: 
+
+An analogy here may be the wrong {{ML EXAMPLE}} or KPI EXAMPLE. 
+
 
 
 ## Practical Advice
