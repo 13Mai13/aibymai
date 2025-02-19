@@ -11,4 +11,4 @@ tags:
 
 This project is related to [Information Retrieval](../deep-dives/search.md) and the goal was to make a practical exaplme of a CLI tool that is able to retive the most similar articles based on cosine similarity. 
 
-Is an easy way to combine the teoretical learning with a fun hands on project! 
+Is an easy way to combine the teoretical learning with a fun hands on project! Go to github to know more!
