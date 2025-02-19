@@ -4,6 +4,7 @@ date: 2025-02-18
 tags:
     - Software Development
     - Culture
+    - Team Dynamics
 ---
 
 I used to say that the only software development method I've seen successfully work is: **Incident driven development**. That means, there is an incident, is due to A, we all stop everything that we are doing to go fix A, the person who coded A or has most context about A solves it. We have a hero!!!
@@ -17,8 +18,6 @@ Well, an image is better than words:
 {{< figure src="/images/hero_culture.png" alt="Hero culture meme" >}}
 
 A definition I've liked is from [Google's Site Reliablity Engineering's presentation](https://sre.google/resources/practices-and-processes/no-heroes/): When there's a systemic probrem or gap in a system and an idividual decices to fill that gap. 
-
-
 
 # Is it a problem?
 
