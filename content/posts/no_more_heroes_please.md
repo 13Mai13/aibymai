@@ -81,8 +81,6 @@ Just as there are code smells in software development, there are signs that indi
 
 ## References & Further Reading
 
-## References & Further Reading
-
 1. **No Heroes: Site Reliability Engineering Practices**  
   Google SRE Team  
   [https://sre.google/resources/practices-and-processes/no-heroes/](https://sre.google/resources/practices-and-processes/no-heroes/)
