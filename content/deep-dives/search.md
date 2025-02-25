@@ -1,6 +1,6 @@
 ---
 title: "Information Retrival (Search)"
-date: 2025-02-04
+date: 2025-02-28
 tags:
     - Information Retrival
 ---
@@ -41,3 +41,37 @@ Information retrival stared 40's and 50's with the purpose of retriving academic
 
 **Matching and ranking**: The goal here is to select the documents that fit in the specified terms (matching) and select the most relevant ones according to a criteria (ranking).
 
+----
+
+1950s-1970s: Statistical Foundations
+
+Boolean retrieval and vector space models
+Term frequency methods
+Early relevance feedback
+
+1980s-1990s: Learning from User Behavior
+
+Probabilistic ranking principles
+Rocchio algorithm for relevance feedback
+Early collaborative filtering
+
+2000s: Learning to Rank Era
+
+RankNet (2005) by Microsoft
+Pairwise and listwise ranking
+Click data for training
+Yahoo's LambdaMART
+
+2010s: Neural IR Revolution
+
+Word2Vec (2013) and embeddings
+Deep learning for IR
+BERT and transformer models
+Dense passage retrieval
+
+2020s: Large Language Models
+
+GPT and BERT-based retrievers
+Hybrid neural-symbolic systems
+RAG (Retrieval Augmented Generation)
+Zero-shot ranking methods
