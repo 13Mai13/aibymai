@@ -3,6 +3,7 @@ title: "Information Retrival (Search)"
 date: 2025-02-28
 tags:
     - Information Retrival
+    - General Introduction
 ---
 
 # Information Retrival
@@ -27,7 +28,7 @@ The field that studies how to give back the most relevat documents given a query
 
 *A good analogy would be that information retrieval is like talking to an experienced librarian where you'd ask: "I want to know recipes with chocolate" and they'd give you "the books with the best chocolate recipes"*
 
-### Classic Tecniques
+## Breif History and Bases
 
 Information retrival stared 40's and 50's with the purpose of retriving academic papers. And it wasn't until the 90's where the field exploted with comertial World Wide Web. The classic tecniques define the core parts of information retrival: indexing, query processing and matching & ranking. 
 
@@ -41,37 +42,47 @@ Information retrival stared 40's and 50's with the purpose of retriving academic
 
 **Matching and ranking**: The goal here is to select the documents that fit in the specified terms (matching) and select the most relevant ones according to a criteria (ranking).
 
-----
+As you'd have guessed now, information retrieval is a huge topic, so I'll divide it intro decades:
 
-1950s-1970s: Statistical Foundations
+### Statistical Foundation (1950s-1970s)
 
 Boolean retrieval and vector space models
 Term frequency methods
 Early relevance feedback
 
-1980s-1990s: Learning from User Behavior
+### Learning from User Behavior (1980s-1990s)
 
 Probabilistic ranking principles
 Rocchio algorithm for relevance feedback
 Early collaborative filtering
 
-2000s: Learning to Rank Era
+### Learning to Rank (2000s)
 
 RankNet (2005) by Microsoft
 Pairwise and listwise ranking
 Click data for training
 Yahoo's LambdaMART
 
-2010s: Neural IR Revolution
+### Neural IR (2010s)
 
 Word2Vec (2013) and embeddings
 Deep learning for IR
 BERT and transformer models
 Dense passage retrieval
 
-2020s: Large Language Models
+### Large Language Models (2020s)
 
 GPT and BERT-based retrievers
 Hybrid neural-symbolic systems
 RAG (Retrieval Augmented Generation)
 Zero-shot ranking methods
+
+## Conclusions
+
+The first one is: what a good time to be alive. If you look at [Link of the image] the amount of innovation has increased exponetially since the 40's. Also the amount of available information online. 
+
+Understanding what are the basics of such a complex problem, is the first milestone when it comes to dive deeper in some of the topics that are shown here. RAG will most likely be the next topic where I deep dive. 
+
+## References & Further Reading
+
+There are so many good resources I've found on the way
