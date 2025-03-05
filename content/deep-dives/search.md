@@ -44,6 +44,8 @@ Information retrival stared 40's and 50's with the purpose of retriving academic
 
 As you'd have guessed now, information retrieval is a huge topic, so I'll divide it intro decades:
 
+{{< figure src="/images/timeline_of_information_retrival.png" alt="Ilustration on a classic IR system" >}}
+
 ### Statistical Foundation (1950s-1970s)
 
 Boolean retrieval and vector space models
