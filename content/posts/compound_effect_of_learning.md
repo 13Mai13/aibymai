@@ -56,3 +56,4 @@ Besides the personal anecdote the key thing is that an investment of time that h
 
 1. **Simon Sinek's book**  
   [Start with why](https://simonsinek.com/books/start-with-why/)
+[Zeigarnik effect] -> learning is better when is interrupted
