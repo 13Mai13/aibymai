@@ -28,12 +28,34 @@ I'm not. Or not today. Maybe I should be (who knows if my manager reads this blo
 
 Any tech company, is trying to solve a **business problem** **through tech** for customer who are willing to pay for that **service** or **product**. This statement is broad and generic, but it kind of  
 
-Let's analize what is the value proposion of an engineering department in that **business**. 
+Let's analize what is the value proposion of an engineering department in that **business**. The goal of engineering would be to create and maintain a product that solved that business need and satifies those expectations. 
+
+Here the trick is **satifies custumer expectations**. Can I ask cursor to create an app for me - Yes. Will I know what is going on in that app if a customer is complaining about it crashing - Probably not. Is that **what the customer expects** - I guess it depends, but I'm pretty certain that my manager won't be happy about it. 
+
+[Pareto Rule]
+
+[John Oster](desing)
 
 
 ## What does using cursor feel like? 
 
+### Should everyone be able to code? 
+
+My answer is YES. At least everyone who is interested. My main coding languge is python, and the thing I like about it the most is how **easy to read** and **flexible** it is. 
+
+Not everything you do with coding with coding requires to be an enterprise software, I use it to track some of my expenses for example. Plain script againts test sheet. It automates stuff I need to do, it works. I probably spend less than 20mins generating that scrip that is runned by weekly, about a year ago. The task took me like 5 mins. Simple formula: 
+
+```
+5 mins * 2 per week * 52 weeks a year = 520 mins a year ~ 8.5 h
+```
+
+Investing 20 mins to safe 8.6 h, makes sense to me. Would it make sense if my bank offered that funcitionality, no! And I wish they did, so I wouldn't need to support it!  
+
+So, on the same way I'm not a professional accountant, but I know the basics about my taxes. Profesional developers shoudn't be afraid of practitioners playing around with AI to generate code for their specific needs. 
+
 ## Practical Advice for Practitioners
+
+This one more tool. It makes your life easier and 
 
 ## References
 
