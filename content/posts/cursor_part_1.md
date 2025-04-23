@@ -32,6 +32,18 @@ Let's analize what is the value proposion of an engineering department in that *
 
 Here the trick is **satifies custumer expectations**. Can I ask cursor to create an app for me - Yes. Will I know what is going on in that app if a customer is complaining about it crashing - Probably not. Is that **what the customer expects** - I guess it depends, but I'm pretty certain that my manager won't be happy about it. 
 
+### What do they pay you for? 
+
+### What do they not pay for? 
+
+I personally **REALLY** hope AI can help me here. Is the type of task where I provide 0 value but due to regulation, nature of the works or others I need to do. 
+
+Before going deeper into this topic, I want to clarify that there is a **Clear** Tradeoff done here: *I'm aware I'm not learning how to do this task, but becasue I'm not interested in doing so (I think I'll only do it once, I need to do it fast,  or other reasons) I opt for AI to do it for me*
+
+If this was a matrix it would be like this: 
+
+
+
 [Pareto Rule]
 
 [John Oster](desing)
