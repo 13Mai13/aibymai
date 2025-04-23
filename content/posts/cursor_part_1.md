@@ -34,6 +34,20 @@ Here the trick is **satifies custumer expectations**. Can I ask cursor to create
 
 ### What do they pay you for? 
 
+In different engineering levels, companies, roles and even *PROJECTS*, this can change and the answer to this question has been different for me. I've gotten payed for: creating machine learning (ML) solutions, building ML solutions at scale, developing services to be able to consume ML models, architect and right now I'm getting payed to scale systems that involve ML. 
+
+For every single one there are three KEY things you get paid for: 
+
+1. Solving an important problem. If you are working in sth that is not relevant for the company, it doesn't matter how hard you work, your results won't be relevant. 
+
+2. 
+
+3. The build vs buy. They are generally paying you beacuse it make
+
+Note that no system desing, software architecture or even coding are mentioned here, those are the means, the *what* they expect, but not the whys. 
+
+In this interview of [The Pragmaic Programmer to John Ousterhout](https://newsletter.pragmaticengineer.com/p/the-philosophy-of-software-design) he claims that software design will be even more important with AI tools here than without them. 
+
 ### What do they not pay for? 
 
 I personally **REALLY** hope AI can help me here. Is the type of task where I provide 0 value but due to regulation, nature of the works or others I need to do. 
@@ -45,8 +59,6 @@ If this was a matrix it would be like this:
 
 
 [Pareto Rule]
-
-[John Oster](desing)
 
 
 ## What does using cursor feel like? 
