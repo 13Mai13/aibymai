@@ -28,7 +28,7 @@ But the goal of this article is to reflect on why I still support AI-based tools
 
 ## Okay, why aren't you afraid of losing your job then?
 
-I'm not. Or not today. Maybe I should be (who knows if my manager reads this blog and deeply dislikes it ;). Jokes aside, I'm not afraid, and if I were worried about my job, I don't think it would be because of AI.
+I'm not. Or not today. Maybe I should be — who knows if my manager reads this blog and deeply dislikes it ;). Jokes aside, I'm not afraid, and if I were worried about my job, I don't think it would be because of AI.
 
 Any tech company is trying to solve a **business problem** **through tech** for customers who are willing to pay for that **service** or **product**. This statement is broad and generic, but it's the foundation of what we do.
 
@@ -73,12 +73,12 @@ When deciding whether to use AI for a task, consider both the technical complexi
 
 | If the task is... | And the business value is... | My approach is... |
 |-------------------|------------------------------|-------------------|
-| Super technical and complex | Critical to the business | Use AI to help research and brainstorm, but make sure to understand everything that's happening. |
+| Super technical and complex | Critical to the business | Use AI to help you with research and brainstorm, but make sure to understand everything that's happening. |
 | Technically simple | High business impact | Use AI to speed things up, but focus on making sure it aligns with business needs. |
-| Complex technically | Not that critical | Use AI to help learn about the complexity, but invest time in understanding the concepts. |
+| Complex technically | Not that critical | Use AI to help you learn about the complexity, but invest time in understanding the concepts. |
 | Simple technically | Low business impact | Let AI handle it completely. Quick review, done. |
 
-This approach helps use AI where it makes sense and invest time where it matters.
+This approach helps you use AI where it makes sense and invest time where it matters.
 
 ## Should everyone be able to code?
 
