@@ -21,6 +21,6 @@ Hi! I'm Mai, a Staff Software Engineer passionate about AI. At "AI by Mai," I br
 
 # 🚀 Beyond Tech
 
-When not coding, I explore open-source projects and am currently learning to surf 🏄‍♀️!
+When not coding, I explore open-source projects and am currently learning to surf 🏄‍♀️! I've also been working in my pijamas since 2020 😆
 
 Let's explore AI together!
