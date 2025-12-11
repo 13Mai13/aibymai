@@ -7,7 +7,7 @@ tags:
 
 # 👩‍💻 About Me
 
-Hi! I'm Mai, a Staff Software Engineer passionate about AI. At "AI by Mai," I break down complex AI concepts in a casual, approachable way. I've led teams developing machine learning models for cybersecurity, industrial predictive control systems, and marketplace optimization. My work spans from LLMs to real-time system optimization, focusing on practical applications that create real impact.
+Hi! I'm Mai, a Staff Software Engineer passionate about AI. At "AI by Mai", I break down complex AI concepts in a casual, approachable way. I've led teams developing machine learning models for cybersecurity, industrial predictive control systems, and marketplace optimization. My work spans from LLMs to real-time system optimization, focusing on practical applications that create real impact.
 
 # 💡 What I Write About
 
