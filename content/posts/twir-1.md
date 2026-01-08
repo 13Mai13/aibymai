@@ -1,5 +1,5 @@
 ---
-title: This Week I Read # 1
+title: This Week I Read - Week 1
 date: 2026-01-06
 tags:
     - TWIR
