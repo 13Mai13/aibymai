@@ -27,3 +27,21 @@ It's desinged your you to like it [Find better research here]
 
 Even at this point one could say, well the interets aren't that high - And I'd get it. We've all have come across some flavor of "automate the boring stuff". But let's evaluate a bit deeper what are we trying to automate: read and write. 
 
+## Is this just about read and write? [I need another title]
+
+As you may have guessed. No. That's an over-simplification. 
+I think is important to understand what does AI do, and where is great. AI evaluation is one of the hardest problem to solve in general knowlege AI [Cite Chip Huyen's book], the main reason behind it being - Is really hard to evaluate an _open ended_ task. Imagine you want to write a reply a email saying you can't have a meeting in the proposed time and you need to have it in another one, well there are multiple combinations of words you can use, phrases you can make in order to achive that goal. There is no obvious "one mail is better than the other" ranking when both are good - even for humans. 
+
+But the two examples above, are still quite scoped. Where is where the amplification can go wrong. Coding, can or can't be an _open ended_ task depending on how easy it is to verify! 
+
+## Vicious way of working
+
+## The 10x engineer
+
+## Conlusion
+
+If you've followed until this point of the article, I hope you've seen how a _way to automate_ you most tedious task can lead to you: feeling left behind and axious. If you chose to leave the _hard part_ of your job to AI, be aware that the interst is _you'll leave the highest pleasures_ to AI too. [Add the research about people linking the hard part of the job most]. And what will you be left with? Well, all the unchanlelling tasks that can't be automated such as the compulsory team meetings. But as you don't work in any of the challenges and feel completly detach to the tasks, you'll start feeling like those task and resposabilities are from someone else (the AI) [Add references to symtomps of burnout here] . With this resultion on you becoming more unhappy: about your job, and about your day to day. 
+
+So, we've ended up with a more anxious, more burnout and unhappier version of you. It doesn't look to me that you are better off that when you started. 
+
+To finish in with some sparkles of optimism, no, I don't think this is _the only way_ to use AI. But, I've seen more and more people fall into this trap. So next time you want to start a task with AI, ask to your self, what is the part where I'll learn and grow, and I encourage you to leave that outside of the prompt ;) 
