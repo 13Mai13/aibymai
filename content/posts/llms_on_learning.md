@@ -4,7 +4,7 @@ date: 2025-02-20
 tags:
     - Draft
     - Software Development
-    - LLM's
+    - LLM
 ---
 
 As one cowrker said in a meeting: I don't remeber 30s after asking to an LLM what I asked, but I remeber for days if a human taught me something. 
