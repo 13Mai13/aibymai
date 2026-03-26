@@ -1,0 +1,22 @@
+{{ define "main"}}
+<div id="archive">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+
+  <ul class="post-list">
+  {{ range (where .Site.Pages "Type" "posts") }}
+    {{ if in .Params.tags "Draft" }}
+      {{ $pageYear := (.Date.Format "2006") }}
+      <li class="post-item">
+        <div class="meta">
+          <time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02") }}</time>
+        </div>
+        <span>
+          <a class="" href="{{ .Permalink }}">{{ if .Title }} {{ .Title }} {{ else }} Untitled {{ end }}</a>
+        </span>
+      </li>
+    {{ end }}
+  {{ end }}
+  </ul>
+</div>
+{{ end }}

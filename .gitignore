@@ -27,3 +27,4 @@ go.work.sum
 # MacOS
 .DS_Store
 /public
+resources/_gen/
