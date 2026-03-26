@@ -1,13 +1,11 @@
 ---
 title: "Why AI doesn't make you better"
-date: 2026-04-09
+date: 2026-03-24
 tags:
     - LLM
     - AI
     - Ways of working
 ---
-
-# Why AI doesn't make you better
 
 Couple caveats before stating: (1) When we talk about AI we refer to Large Language Models of general use (ChatGPT, Claude, Gemini,..) (2) I work in tech, and even if I believe this is true in other fields too, I can only speak about what I've seen in that field. 
 
@@ -32,11 +30,24 @@ Even at this point one could say, well the interets aren't that high - And I'd g
 As you may have guessed. No. That's an over-simplification. 
 I think is important to understand what does AI do, and where is great. AI evaluation is one of the hardest problem to solve in general knowlege AI [Cite Chip Huyen's book], the main reason behind it being - Is really hard to evaluate an _open ended_ task. Imagine you want to write a reply a email saying you can't have a meeting in the proposed time and you need to have it in another one, well there are multiple combinations of words you can use, phrases you can make in order to achive that goal. There is no obvious "one mail is better than the other" ranking when both are good - even for humans. 
 
-But the two examples above, are still quite scoped. Where is where the amplification can go wrong. Coding, can or can't be an _open ended_ task depending on how easy it is to verify! 
+But the two examples above, are still quite scoped. Where is where the amplification can go wrong. Coding, can or can't be an _open ended_ task depending on how easy it is to verify. David Beazly has a great video about it - Intro of pycon sri lanka named the problem with the problem [https://www.youtube.com/watch?v=t-IUY6QrJyU]. 
+
+Let's dive a bit into this with a generic task. You've agreed with your project managet that need to create a new data pipleine to populate a dashboard. Now we are going to have two alternative ways of working: A & B. 
+
+A will draft some requiremets: How will the users consume the data, which is the data freshness needed, what happens when there is no data, ... This would lead to leave some data out, have some edge cases that need to be discussed with further people and most likey will go back to customers saying: how do want me to calculate an average when a day is missing? type of questions.
+
+B will have some trascripting app of the meeting, has a markdown file now, that will feed to claudecode or codex, then add a Jira pluging, create the tickets execute the model's pland and after two or three interations when nothing is failing, will mark the task as done.  
+
+So, now imagine that a customer asks: how are you calculating an average when a day is missing? Well the reallity is that B that _doesn't don't know_! 
+
+An important lesson here, is that in the case of A one could argue that is more valuable what A doesn't do that what it really does. What I mean by this, is that saying NO, leaving edcases out and making decisions on missleading data, is many times harder than the task itself. 
 
 ## Vicious way of working
 
+
+
 ## The 10x engineer
+
 
 ## Conlusion
 
