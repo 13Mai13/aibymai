@@ -7,11 +7,9 @@ title = 'AI by Mai'
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
-  showProjectsList = true # show projects list by default (if projects data file exists).
-  showDeepDivesList = true
-  deepDivesOnHomePage = 5   # controls how many deep dives show on homepage
   showAllPostsArchive = false  # controls pagination in archive view
-  
+  colortheme = "white"
+
   [[menu.main]]
     name = 'Home'
     url = '/'
@@ -25,17 +23,9 @@ title = 'AI by Mai'
     url = '/posts'
     weight = 3
   [[menu.main]]
-    name = 'Projects'
-    url = '/projects'
-    weight = 4
-  [[menu.main]]
-    name = 'Deep Dives'
-    url = '/deep-dives'
-    weight = 5
-  [[menu.main]]
     name = 'Tags'
     url = '/tags'
-    weight = 6
+    weight = 4
 
 
   [[params.social]]
