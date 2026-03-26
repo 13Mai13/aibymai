@@ -9,11 +9,20 @@
       </div>
       {{ else }}
       <div class="tag-cloud-tags">
-        {{ $AllRegularPagesCount := len .Site.RegularPages }}
         {{ range $elem := .Data.Terms.Alphabetical }}
-        <a style="font-size: {{ (add 0.8 (mul 15 (div (float $elem.Count) $AllRegularPagesCount))) }}rem;" href="{{ $elem.Page.Permalink | relURL }}">
-          {{- .Page.Title -}}
-        </a>
+          {{ if ne .Page.Title "Draft" }}
+            {{ $nonDraftCount := 0 }}
+            {{ range $elem.Pages }}
+              {{ if not (in .Params.tags "Draft") }}
+                {{ $nonDraftCount = add $nonDraftCount 1 }}
+              {{ end }}
+            {{ end }}
+            {{ if gt $nonDraftCount 0 }}
+            <a href="{{ $elem.Page.Permalink | relURL }}" style="display: inline-block; margin: 0.5rem;">
+              {{- .Page.Title -}} ({{ $nonDraftCount }})
+            </a>
+            {{ end }}
+          {{ end }}
         {{ end }}
       </div>
       {{ end }}

@@ -1,26 +1,36 @@
 ---
-title: About Me
+title: Now
 date: 2024-12-22
 tags:
-    - About Me
+    - Now
 ---
 
-# 👩‍💻 About Me
+# About Me
 
-Hi! I'm Mai, a Staff Software Engineer passionate about AI. At "AI by Mai", I break down complex AI concepts in a casual, approachable way. I've led teams developing machine learning models for cybersecurity, industrial predictive control systems, and marketplace optimization. My work spans from LLMs to real-time system optimization, focusing on practical applications that create real impact.
+Engineer at heart. I've worn a few hats—software engineer, ML engineer, AI research engineer—but the common thread is a love for hard problems, whether they're hard because of scale or just inherently deeply complex.
 
-# 💡 What I Write About
+I also write about AI and engineering at [AI by Mai](https://www.aibymai.dev/posts/) in a casual, practical way—no hype, just the interesting bits.
 
-* AI concepts and trends in plain language
+Past work spans ML models for cybersecurity, industrial control systems, and marketplace optimization and automation—from LLMs to real-time system optimization, across both platform and feature teams.
 
-* Software engineering best practices
+# What I'm Focused On Now
 
-* Hands-on projects with various programming languages
+*Last updated: March 2026*
 
-* Deep dives: graph algorithms, LLMs, search, optimization or any other topic I may find interesting
+Inspired by [Derek Sivers' /now page](https://nownownow.com/about).
 
-# 🚀 Beyond Tech
+**Current questions:**
+- Where's the line between AI assistance and actually getting better at something? I don't have a clean answer yet.
+- SSecurity × AI: enormous opportunity, but the risk surface is just as large. It's the space I keep coming back to.
 
-When not coding, I explore open-source projects and am currently learning to surf 🏄‍♀️! I've also been working in my pijamas since 2020 😆
+**Currently learning:**
+- The security/AI intersection — still early days, moves fast
+- AI evaluation — harder than it looks, more important than most teams treat it
+- Agentic patterns — what actually works vs. what's just demos
 
-Let's explore AI together!
+**Currently reading:**
+- AI Systems Performance Engineering by Chris Fregly
+
+---
+
+*This page is updated regularly. Want to know what I was focused on before? Check the git history!*

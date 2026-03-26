@@ -2,13 +2,20 @@
 <div id="archive">
   <ul class="post-list">
 
-  {{ $pages := .Paginator.Pages }}
-  {{ if .Site.Params.showAllPostsArchive }}
-    {{ $pages = .Pages }}
+  {{ $allPages := .Pages }}
+  {{ $filteredPages := slice }}
+  {{ range $allPages }}
+    {{ if not (in .Params.tags "Draft") }}
+      {{ $filteredPages = $filteredPages | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{ $pages := $filteredPages }}
+  {{ if not .Site.Params.showAllPostsArchive }}
+    {{ $pages = (.Paginate $filteredPages).Pages }}
   {{ end }}
 
   {{ range (sort $pages "Date" "desc") }}
-    {{ if not (in .Params.tags "Draft") }}
     {{ $pageYear := (.Date.Format "2006") }}
     {{ if (ne $pageYear ($.Scratch.Get "year")) }}
     {{ $.Scratch.Set "year" $pageYear }}
@@ -23,9 +30,8 @@
       </span>
     </li>
     {{ end }}
-    {{ end }}
   </ul>
-  {{ if eq .Site.Params.showAllPostsArchive false }}
+  {{ if not .Site.Params.showAllPostsArchive }}
     {{ partial "pagination.html" . }}
   {{ end }}
 </div>
