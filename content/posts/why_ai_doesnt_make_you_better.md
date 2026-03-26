@@ -44,9 +44,23 @@ An important lesson here, is that in the case of A one could argue that is more 
 
 ## Vicious way of working
 
+Is easy to fall in the mix & match [see if you can find sth better] way of working. Where you take all tickets, all your meetings, all the projects updates and start mix and matching what you want to do in different tools, slack channels, and claude code contextes. The problem is that you a given claude ALL, and it needs _clarity_, I've always felt like as a senior + engineer your biggest value was to say no [https://www.aibymai.dev/posts/value_of_engineers/]. I could go further and I can say that is better to have a mistake made and undestood by a human, than a successful task that any AI has achived this way. 
 
+[Add the A vs B example]
+
+You need to think - even if is expensive and you always need to be able to explain why 
+
+[Add the article about outcome ownership and AI]
 
 ## The 10x engineer
+
+The industry (tech) has spend years explaining and defining 10x engineers. However, those used to be the ones that can ship really complex projects fast. _How?_ Well, most of them understood deeply the organization they were working on, the faced challenges and the technolgy they were working with. This made them have the position of engineers's of engineers where any engineering team could ask them sth they were stuck with and this 10x engineers would unblock them. Is very important to understand that this engineers had _deep contexts_ they accumuated over _time_. Boris Chenry creaton of claude code talked about this in Ryan Peterman's podcast when we has on facebook and trasitiond to instagram to work in rural Japan.
+
+One more thing he metions is to use common sense and that with the previosly defined process, is less comon that ever. The problem is that thinking baout a task, is way more expensive cognitively, than executing it with AI. 
+
+[Add the A vs B example]
+
+The paradox of "the more you do, the more you need to do" (or the Productivity Paradox) describes how increased activity, busyness, and output often create more work, leading to diminishing returns, anxiety, and stagnation rather than success. [Get a reference]
 
 
 ## Conlusion
@@ -55,4 +69,7 @@ If you've followed until this point of the article, I hope you've seen how a _wa
 
 So, we've ended up with a more anxious, more burnout and unhappier version of you. It doesn't look to me that you are better off that when you started. 
 
-To finish in with some sparkles of optimism, no, I don't think this is _the only way_ to use AI. But, I've seen more and more people fall into this trap. So next time you want to start a task with AI, ask to your self, what is the part where I'll learn and grow, and I encourage you to leave that outside of the prompt ;) 
+At the end of the day, we all prefer easy lies than uncomfortable thuths -> Look for the meme
+And LLM's like many other tools in tech puerly depend on us human liking them and the fact that we keep using them. SO they won't give us the uncofrtable thurths. They want to please us. ANd rember, with easy lies, the easiet person to fool, is yourself. 
+
+To finish in with some sparkles of optimism, no, I don't think this is _the only way_ to use AI. But, I've seen more and more people fall into this trap. So next time you want to start a task with AI, ask to your self, what is the part where I'll learn and grow, and I encourage you to leave that outside of the prompt ;) Remebere, there is an alternative path. 
