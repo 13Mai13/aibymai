@@ -3,6 +3,7 @@ title: This Week I Read - Week 2
 date: 2026-01-18
 tags:
     - TWIR
+    - Draft
 ---
 
 These couple weeks I've read quite a lot. However nothing was so linked to software. 

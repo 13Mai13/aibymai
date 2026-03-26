@@ -3,6 +3,7 @@ title: This Week I Read - Week 1
 date: 2026-01-06
 tags:
     - TWIR
+    - Draft
 ---
 
 This week I read (TWIR) starts as a personal project of this new year. The goal is simple but ambitious (as an MVP or POC of a bigger project). I'll post every week about what I've read and why I believe it's important. Let's start: 

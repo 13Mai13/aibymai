@@ -1,9 +1,10 @@
 ---
-title: 
+title: My work setup
 date: 2026-01-20
 tags:
     - Software Development
     - Workspace
+    - Draft
 ---
 
 This are going to be a series of hopefully short articles around how I set my workspace. In this first article we'll dive into why do something like this are what are the *musts* for any work place, of course in my opinion. 
