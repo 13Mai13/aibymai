@@ -34,7 +34,14 @@
      {{ $showAllPostsOnHomePage = .Site.Params.ShowAllPostsOnHomePage }}
    {{ end }}
    {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
-   {{ $mainPosts := (sort ( where site.RegularPages "Type" "posts" ) "Date" "desc") }}
+   {{ $allPosts := (where site.RegularPages "Type" "posts") }}
+   {{ $mainPosts := slice }}
+   {{ range $allPosts }}
+     {{ if not (in .Params.tags "Draft") }}
+       {{ $mainPosts = $mainPosts | append . }}
+     {{ end }}
+   {{ end }}
+   {{ $mainPosts = sort $mainPosts "Date" "desc" }}
    {{ if $showAllPostsOnHomePage }}
    <ul class="post-list">
      {{ range (.Paginate $mainPosts).Pages }}
@@ -63,58 +70,5 @@
    {{ end }}
  </section>
 
- {{ $showProjectsList := false }}
- {{ if (isset .Site.Params "showprojectslist") }}
-   {{ $showProjectsList = .Site.Params.showProjectsList }}
- {{ else if .Site.Data.projects }}
-   {{ $showProjectsList = true }}
- {{ end }}
- 
- {{ if $showProjectsList }}
-   {{ $projectsUrl := "#" }}
-   {{ if isset .Site.Params "projectsurl" }}
-     {{ $projectsUrl = .Site.Params.projectsUrl }}
-   {{ end }}
-   <section id="projects">
-     <span class="h1"><a href="/projects">Projects</a></span>
-     <ul class="post-list">
-       {{ range first 5 (where .Site.RegularPages "Type" "projects").ByDate.Reverse }}
-       <li class="post-item">
-         <div class="meta"><time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time></div>
-         <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
-       </li>
-       {{ end }}
-     </ul>
-   </section>
- {{ end }}
-
- {{ $showDeepDivesList := false }}
- {{ if (isset .Site.Params "showdeepdiveslist") }}
-   {{ $showDeepDivesList = .Site.Params.showDeepDivesList }}
- {{ end }}
- {{ $showDeepDivesList := false }}
- {{ if (isset .Site.Params "showdeepdiveslist") }}
-   {{ $showDeepDivesList = .Site.Params.showDeepDivesList }}
- {{ end }}
- 
- {{ if $showDeepDivesList }}
- <section id="deep-dives">
-   <span class="h1"><a href="{{ "/deep-dives" | absURL }}">Deep Dives</a></span>
-   {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
-   {{ $mainDeepDives := (sort ( where site.RegularPages "Type" "deep-dives" ) "Date" "desc") }}
-   <ul class="post-list">
-     {{ .Scratch.Set "count" 5 }}
-     {{ if isset .Site.Params "deepdivesonhomepage" }}
-       {{ .Scratch.Set "count" .Site.Params.deepDivesOnHomePage }}
-     {{ end }}
-     {{ range (first (.Scratch.Get "count") $mainDeepDives) }}
-       <li class="post-item">
-         <div class="meta"><time datetime="{{ time .Date }}" itemprop="datePublished">{{ .Date.Format $dataFormat }}</time></div>
-         <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a></span>
-       </li>
-     {{ end }}
-   </ul>
- </section>
- {{ end }}
 
 {{ end }}
