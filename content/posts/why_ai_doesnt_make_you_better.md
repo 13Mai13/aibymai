@@ -1,75 +1,100 @@
 ---
 title: "Why AI doesn't make you better"
-date: 2026-03-24
+date: 2026-03-26
 tags:
     - LLM
     - AI
     - Ways of working
 ---
 
-Couple caveats before stating: (1) When we talk about AI we refer to Large Language Models of general use (ChatGPT, Claude, Gemini,..) (2) I work in tech, and even if I believe this is true in other fields too, I can only speak about what I've seen in that field. 
+A couple of caveats before we start: when I say AI here, I mean general-purpose large language models — ChatGPT, Claude, Gemini, that kind of thing. And while most of my examples come from tech, I'm fairly confident the pattern shows up in other fields too.
 
 ## What AI provides
 
-Is constantly evolving in features, but on its essence it can: read and write for you. When it reads for you, it can search, gather context from multiple different tools used to tarck work (Jira, technical documentation, how-to guides, codebases) or parse extensive documentation (legal contract). When it writes, it can write almost anything you've asked for with the context that you've given, it can even sound the way you do if enough examples are given. 
+Imagine picking up a guitar. You've been playing for a year, you know a handful of chords, and you make mistakes. Now someone hands you an amplifier. Suddenly you sound louder, you fill the room, you feel like more. But your mistakes are louder too. The amplifier didn't teach you anything — it just broadcast whatever was already there, good and bad.
 
-So far, none of the task sound specially catastrofic, right? They are not. But when you ask AI to do any of those, it comes with some added interets. 
+That's the most honest description I have of what AI does for you at work. It amplifies you. Your strengths and your weaknesses, in equal measure.
 
-It amplifies you. That's the best word I can find, with your goods and your bads. Just like when playing the guitar you don't lean the hability to play more songs with an amplifier, the techique must be there first, the amplifier would make you be in more places, or sound louder, but your mistakes will be louder too. 
+On its surface, what AI can do is straightforward: it reads and writes for you. When it reads, it can gather context from the tools you use to track work — Jira tickets, technical documentation, codebases, legal contracts. When it writes, it can produce almost anything you ask for, in roughly the style you ask for it. None of that sounds catastrophic. But there are a few things worth understanding about how it does this.
 
-It hallucinates [Insert reference]. In plain english mean it would give untrue facts about the task you've asked it to write about. Some of them may be very obvious, but not all. Even if is true that they keep improving, is actually quite easy to spot when an LLM wrote something if you truly know the person and the context. Incoherences appear. 
+**It hallucinates.** This is the technical term for when a model states something confidently that isn't true. Some hallucinations are obvious. Many aren't — especially if you don't know the subject deeply yourself. Models keep improving, but the problem hasn't gone away, and the more fluently something is written, the easier it is to miss what's wrong with it. [1]
 
-It sounds like you. A very common way to stop hallucinations [Insert reference] is to give AI better examples in the prompt [explain what a prompt is], this way AI can imitates those examples and generates a new text that is closer to them. This examples are kept on the context window [explain what that is] so AI tries to keep that "style" in memory in order not to make the same mistakes again. This isn't something negative, unless you combine it with the previous pharagrah of, AI will introduce untruth facts. 
+**It blends your style with its errors.** A common way to reduce hallucinations is to give the model better examples — show it how you write, how you reason, what your previous work looks like. The model then imitates those examples closely enough that the output starts to sound like you. This is useful. It's also the reason errors become harder to catch: the writing feels familiar, so you read it with less skepticism than you should.
 
-It's desinged your you to like it [Find better research here]
+**It's designed to make you like it.** This one is structural, not incidental. Large language models are trained using a process called Reinforcement Learning from Human Feedback (RLHF), where human raters evaluate responses and the model is rewarded for outputs that people prefer. [2] In practice, this means models are optimised to sound helpful, agreeable, and confident — not necessarily to be honest when honesty is uncomfortable. Chip Huyen covers this tension well in AI Engineering — the models aren't incentivised to tell you what you don't want to hear. Keep that in mind.
 
-Even at this point one could say, well the interets aren't that high - And I'd get it. We've all have come across some flavor of "automate the boring stuff". But let's evaluate a bit deeper what are we trying to automate: read and write. 
+## The part you're giving away
 
-## Is this just about read and write? [I need another title]
+You might read all of that and think: fine, but these are manageable trade-offs. And you'd be right, if reading and writing were really all that was at stake. But they're not.
 
-As you may have guessed. No. That's an over-simplification. 
-I think is important to understand what does AI do, and where is great. AI evaluation is one of the hardest problem to solve in general knowlege AI [Cite Chip Huyen's book], the main reason behind it being - Is really hard to evaluate an _open ended_ task. Imagine you want to write a reply a email saying you can't have a meeting in the proposed time and you need to have it in another one, well there are multiple combinations of words you can use, phrases you can make in order to achive that goal. There is no obvious "one mail is better than the other" ranking when both are good - even for humans. 
+AI evaluation is one of the hardest unsolved problems in the field — and the main reason is that most real tasks are open-ended. There's no single correct reply to an email, no objectively best way to structure an argument. Humans struggle to rank these things consistently, and models do too. The tasks that are easiest to evaluate are the ones with a clear right answer. The tasks that matter most, usually aren't.
 
-But the two examples above, are still quite scoped. Where is where the amplification can go wrong. Coding, can or can't be an _open ended_ task depending on how easy it is to verify. David Beazly has a great video about it - Intro of pycon sri lanka named the problem with the problem [https://www.youtube.com/watch?v=t-IUY6QrJyU]. 
+David Beazley touches on something related in his PyCon Sri Lanka keynote — the problem with the problem. The hardest part of most technical work isn't execution, it's figuring out what you're actually trying to solve.
 
-Let's dive a bit into this with a generic task. You've agreed with your project managet that need to create a new data pipleine to populate a dashboard. Now we are going to have two alternative ways of working: A & B. 
+Let me make this concrete. Say you and your project manager agree that you need to build a new data pipeline to populate a dashboard. Two engineers go off to work on it.
 
-A will draft some requiremets: How will the users consume the data, which is the data freshness needed, what happens when there is no data, ... This would lead to leave some data out, have some edge cases that need to be discussed with further people and most likey will go back to customers saying: how do want me to calculate an average when a day is missing? type of questions.
+**A** starts by drafting requirements. How will users consume the data? What freshness do they need? What happens when a day is missing — do you skip it, interpolate, show an error? A asks uncomfortable questions, goes back to stakeholders, probably gets told they're overthinking it, and pushes anyway. Some edge cases get resolved. Some get explicitly left out. A knows exactly why.
 
-B will have some trascripting app of the meeting, has a markdown file now, that will feed to claudecode or codex, then add a Jira pluging, create the tickets execute the model's pland and after two or three interations when nothing is failing, will mark the task as done.  
+**B** has a transcript of the kickoff meeting, converts it to a markdown file, feeds it to an AI coding agent, connects a Jira plugin, reviews the output after a couple of iterations, and marks the ticket done when nothing is visibly broken.
 
-So, now imagine that a customer asks: how are you calculating an average when a day is missing? Well the reallity is that B that _doesn't don't know_! 
+The pipeline ships. Three weeks later, a stakeholder asks: "How are you calculating the average when a day is missing?"
 
-An important lesson here, is that in the case of A one could argue that is more valuable what A doesn't do that what it really does. What I mean by this, is that saying NO, leaving edcases out and making decisions on missleading data, is many times harder than the task itself. 
+B doesn't know. Not just the answer — B doesn't know that the question was ever asked, or that it matters.
 
-## Vicious way of working
+There's a name for what B has accumulated here: **comprehension debt**. Addy Osmani defines it as the growing gap between how much code exists in your system and how much of it any human genuinely understands. [3] What makes it more dangerous than ordinary technical debt is that it breeds false confidence — the codebase looks clean, the tests are green, and the reckoning arrives quietly, usually at the worst possible moment.
 
-Is easy to fall in the mix & match [see if you can find sth better] way of working. Where you take all tickets, all your meetings, all the projects updates and start mix and matching what you want to do in different tools, slack channels, and claude code contextes. The problem is that you a given claude ALL, and it needs _clarity_, I've always felt like as a senior + engineer your biggest value was to say no [https://www.aibymai.dev/posts/value_of_engineers/]. I could go further and I can say that is better to have a mistake made and undestood by a human, than a successful task that any AI has achived this way. 
+B can't learn from not knowing, because B never had to think about it in the first place. The question was never part of B's process. It was dissolved by the convenience of the tool.
 
-[Add the A vs B example]
+The most valuable thing A does here isn't what it builds — it's what it refuses to skip.
 
-You need to think - even if is expensive and you always need to be able to explain why 
+## Outsourcing your judgment
 
-[Add the article about outcome ownership and AI]
+It's easy to fall into what I'd call **outsourcing your judgment**. You take all your tickets, all your meeting notes, all your project updates, feed them into various tools and AI contexts, and let the system generate a plan. The problem is that AI needs clarity to be useful — and producing that clarity is exactly the work you've just handed away. This is also where cognitive load becomes relevant: the mental effort of breaking down a vague problem, resolving ambiguity, and making trade-offs explicit is not overhead — it's the thinking itself. I've written about this before in the context of ML systems, but the principle holds here too: complexity you don't consciously manage ends up managing you.
+
+I've written before about how the highest value a senior engineer brings is often the ability to say no — to scope ruthlessly, to identify what doesn't need to be built, to name the edge case that would invalidate the whole approach. [4] That judgment doesn't come from processing more information faster. It comes from sitting with a problem long enough to understand it.
+
+Which brings me to what I think is the real risk — and it's not that AI will do your job badly. It's that it might do it well enough that you stop noticing what you're no longer doing.
+
+A mistake made and understood by a human is worth more than a success achieved by AI that no one can explain. Not because failure is good, but because understanding is what compounds. It's what you carry into the next problem. When AI absorbs the failure — or avoids it silently — you don't get that. You get the output without the understanding that should have come with it.
+
+Go back to A and B: six months later, the dashboard has a new requirement. A can reason about the implications immediately, because A built a mental model of the system while building the system itself. B has to re-read the code like a stranger reading someone else's work. Because in a meaningful sense, it is.
 
 ## The 10x engineer
 
-The industry (tech) has spend years explaining and defining 10x engineers. However, those used to be the ones that can ship really complex projects fast. _How?_ Well, most of them understood deeply the organization they were working on, the faced challenges and the technolgy they were working with. This made them have the position of engineers's of engineers where any engineering team could ask them sth they were stuck with and this 10x engineers would unblock them. Is very important to understand that this engineers had _deep contexts_ they accumuated over _time_. Boris Chenry creaton of claude code talked about this in Ryan Peterman's podcast when we has on facebook and trasitiond to instagram to work in rural Japan.
+The tech industry has spent years mythologising the 10x engineer — the person who ships complex projects faster than anyone else. What often gets left out of that story is how. It wasn't magic. It was accumulated context: deep knowledge of the organisation, the codebase, the failure modes, the political landscape, the customers. These engineers were fast because they'd already done the thinking, in advance, over years.
 
-One more thing he metions is to use common sense and that with the previosly defined process, is less comon that ever. The problem is that thinking baout a task, is way more expensive cognitively, than executing it with AI. 
+Boris Cherny, creator of Claude Code, talks about something like this in Ryan Peterman's podcast — the transition from Facebook to Instagram, working in rural Japan, moving fast in a new environment. The throughline is that speed came from understanding, not from skipping understanding. He also makes a point about common sense — and with the way of working I've been describing, common sense is exactly what gets eroded first. You're executing faster than you're thinking.
 
-[Add the A vs B example]
+Here's the uncomfortable data point: if AI were genuinely making engineers dramatically more productive, we'd expect to see a measurable surge in software being produced. Researchers at Answer.AI looked at PyPI — Python's central package repository — and found no obvious increase in the rate of package creation post-ChatGPT, and only a marginal increase in update frequency across the board. [5] The 10x productivity story is loudest among people who are already deeply technical and working on AI tools themselves. For everyone else, the signal is much quieter.
 
-The paradox of "the more you do, the more you need to do" (or the Productivity Paradox) describes how increased activity, busyness, and output often create more work, leading to diminishing returns, anxiety, and stagnation rather than success. [Get a reference]
+What is happening — and this is the paradox — is that AI makes execution feel cheaper, so we do more of it. More tickets, more pipelines, more features. But the thinking that should precede execution — the requirement-drafting, the edge-case-questioning, the "should we even build this" conversation — that's still expensive. And because it's expensive, and because AI can make it feel optional, people skip it. They get more done. They understand less. They move faster in the wrong direction with more confidence than ever before.
 
+This is the **Productivity Paradox**: increased output leading not to success, but to more work, more rework, and eventually more anxiety. You're not accumulating capability. You're burning through it.
 
-## Conlusion
+## Conclusion
 
-If you've followed until this point of the article, I hope you've seen how a _way to automate_ you most tedious task can lead to you: feeling left behind and axious. If you chose to leave the _hard part_ of your job to AI, be aware that the interst is _you'll leave the highest pleasures_ to AI too. [Add the research about people linking the hard part of the job most]. And what will you be left with? Well, all the unchanlelling tasks that can't be automated such as the compulsory team meetings. But as you don't work in any of the challenges and feel completly detach to the tasks, you'll start feeling like those task and resposabilities are from someone else (the AI) [Add references to symtomps of burnout here] . With this resultion on you becoming more unhappy: about your job, and about your day to day. 
+If you've followed this far, you can probably see how something marketed as automation of your most tedious tasks can quietly become something else: a way of hollowing out the parts of your job that actually engaged you.
 
-So, we've ended up with a more anxious, more burnout and unhappier version of you. It doesn't look to me that you are better off that when you started. 
+Paul Millerd, in The Pathless Path, cites Sebastian Junger's observation about soldiers who wanted to return to war zones despite the trauma: "humans don't mind hardship, in fact they thrive on it; what they mind is not feeling necessary." [6] The hard parts of your job — the uncomfortable question, the requirement you have to fight for, the problem you have to sit with — those are what make the work feel like yours. When you hand those to AI, you're not just offloading effort. You're offloading the thing that made you feel necessary.
 
-At the end of the day, we all prefer easy lies than uncomfortable thuths -> Look for the meme
-And LLM's like many other tools in tech puerly depend on us human liking them and the fact that we keep using them. SO they won't give us the uncofrtable thurths. They want to please us. ANd rember, with easy lies, the easiet person to fool, is yourself. 
+What's left? The parts that can't be automated — the compulsory syncs, the status updates, the process overhead. Tasks you were already indifferent to, now experienced by someone who's lost their connection to the underlying work. The outcomes feel like they belong to the AI. The meetings feel like they belong to someone else. You're present for all of it and invested in none of it. Those are recognisable symptoms of burnout — detachment from your work, loss of ownership, a creeping sense that your responsibilities belong to someone else. [7]
 
-To finish in with some sparkles of optimism, no, I don't think this is _the only way_ to use AI. But, I've seen more and more people fall into this trap. So next time you want to start a task with AI, ask to your self, what is the part where I'll learn and grow, and I encourage you to leave that outside of the prompt ;) Remebere, there is an alternative path. 
+So you end up more anxious, more burned out, and less satisfied — despite being, by every surface metric, more productive.
+
+Rebecca Johnson puts it well: we all prefer comfortable lies to unpleasant truths. [8] And the easiest person to fool is yourself. LLMs are products. They're designed to be used, to be liked, to be opened again tomorrow. They're not going to volunteer the uncomfortable truth that you'd be better off struggling through this one on your own. They want to help. And "wanting to help" and "actually helping" are not always the same thing.
+
+I don't think this is the only way to use AI. I use it myself, for things I've consciously decided I don't need to own. But the choice has to be conscious. So the next time you're about to open a chat window and paste in a problem — pause and ask: what's the part of this where I'd actually grow? And then, maybe, leave that part out of the prompt.
+
+The amplifier will still be there. Just make sure you've learned the chords first.
+
+## References
+
+1. **Hallucination survey** — [Survey of Hallucination in Natural Language Generation](https://arxiv.org/abs/2202.03629)
+2. **RLHF explained** — [Illustrating RLHF](https://huggingface.co/blog/rlhf), Hugging Face
+3. **Comprehension debt** — [Addy Osmani: Comprehension Debt](https://addyosmani.com/blog/comprehension-debt/)
+4. **The value of saying no** — [The Value of Engineers in the AI Era](https://www.aibymai.dev/posts/value_of_engineers/)
+5. **AI productivity data** — [So where are all the AI apps?](https://www.answer.ai/posts/2024-10-03-npr.html), Answer.AI
+6. **Hardship and meaning** — The Pathless Path, Paul Millerd
+7. **Burnout** — [WHO: Burn-out an occupational phenomenon](https://www.who.int/news/item/28-05-2019-burn-out-an-occupational-phenomenon-international-classification-of-diseases)
+8. **Comfortable lies** — [Comforting Lies vs Unpleasant Truths](https://rebeccajohnson.substack.com/p/comforting-lies-vs-unpleasant-truths), Rebecca Johnson
+9. **Complexity and cognitive load** — [Is complexity in machine learning systems justified?](https://www.aibymai.dev/posts/complexity_and_congnitive_load/), AI by Mai
