@@ -3,8 +3,10 @@ title: "Why AI doesn't make you better"
 date: 2026-03-26
 tags:
     - LLM
-    - AI
-    - Ways of working
+    - Developer Productivity
+    - Cognitive Load
+    - Software Engineering
+    - Engineering Culture
 ---
 
 A couple of caveats before we start: when I say AI here, I mean general-purpose large language models — ChatGPT, Claude, Gemini, that kind of thing. And while most of my examples come from tech, I'm fairly confident the pattern shows up in other fields too.
