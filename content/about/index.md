@@ -29,7 +29,10 @@ Inspired by [Derek Sivers' /now page](https://nownownow.com/about).
 - Agentic patterns — what actually works vs. what's just demos
 
 **Currently reading:**
-- AI Systems Performance Engineering by Chris Fregly
+
+I always read one technical and one non-technical book:
+- *AI Engineering* by Chip Huyen
+- *The Pathless Path* by Paul Millerd
 
 ---
 
