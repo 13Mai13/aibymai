@@ -23,7 +23,7 @@ On its surface, what AI can do is straightforward: it reads and writes for you. 
 
 **It blends your style with its errors.** A common way to reduce hallucinations is to give the model better examples — show it how you write, how you reason, what your previous work looks like. The model then imitates those examples closely enough that the output starts to sound like you. This is useful. It's also the reason errors become harder to catch: the writing feels familiar, so you read it with less skepticism than you should.
 
-**It's designed to make you like it.** This one is structural, not incidental. Large language models are trained using a process called Reinforcement Learning from Human Feedback (RLHF), where human raters evaluate responses and the model is rewarded for outputs that people prefer. [2] In practice, this means models are optimised to sound helpful, agreeable, and confident — not necessarily to be honest when honesty is uncomfortable. Chip Huyen covers this tension well in AI Engineering — the models aren't incentivised to tell you what you don't want to hear. Keep that in mind.
+**It's designed to make you like it.** This one is structural, not incidental. Large language models are trained using a process called Reinforcement Learning from Human Feedback (RLHF), where human raters evaluate responses and the model is rewarded for outputs that people prefer. [2] In practice, this means models are optimized to sound helpful, agreeable, and confident — not necessarily to be honest when honesty is uncomfortable. Chip Huyen covers this tension well in AI Engineering — the models aren't incentivised to tell you what you don't want to hear. Keep that in mind.
 
 ## The part you're giving away
 
@@ -47,7 +47,7 @@ There's a name for what B has accumulated here: **comprehension debt**. Addy Osm
 
 B can't learn from not knowing, because B never had to think about it in the first place. The question was never part of B's process. It was dissolved by the convenience of the tool.
 
-The most valuable thing A does here isn't what it builds — it's what it refuses to skip.
+What makes A valuable here isn't what gets built — it's what gets questioned first.
 
 ## Outsourcing your judgment
 
@@ -79,7 +79,7 @@ If you've followed this far, you can probably see how something marketed as auto
 
 Paul Millerd, in The Pathless Path, cites Sebastian Junger's observation about soldiers who wanted to return to war zones despite the trauma: "humans don't mind hardship, in fact they thrive on it; what they mind is not feeling necessary." [6] The hard parts of your job — the uncomfortable question, the requirement you have to fight for, the problem you have to sit with — those are what make the work feel like yours. When you hand those to AI, you're not just offloading effort. You're offloading the thing that made you feel necessary.
 
-What's left? The parts that can't be automated — the compulsory syncs, the status updates, the process overhead. Tasks you were already indifferent to, now experienced by someone who's lost their connection to the underlying work. The outcomes feel like they belong to the AI. The meetings feel like they belong to someone else. You're present for all of it and invested in none of it. Those are recognisable symptoms of burnout — detachment from your work, loss of ownership, a creeping sense that your responsibilities belong to someone else. [7]
+What's left? The parts that can't be automated — the mandatory syncs, the status updates, the process overhead. Tasks you were already indifferent to, now experienced by someone who's lost their connection to the underlying work. The outcomes feel like they belong to the AI. The meetings feel like they belong to someone else. You're present for all of it and invested in none of it. Those are recognisable symptoms of burnout — detachment from your work, loss of ownership, a creeping sense that your responsibilities belong to someone else. [7]
 
 So you end up more anxious, more burned out, and less satisfied — despite being, by every surface metric, more productive.
 
