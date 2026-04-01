@@ -32,7 +32,7 @@ Inspired by [Derek Sivers' /now page](https://nownownow.com/about).
 
 I always read one technical and one non-technical book:
 - *AI Engineering* by Chip Huyen
-- *The Pathless Path* by Paul Millerd
+- *Quantum Leaps* by Hugh Barker
 
 ---
 
