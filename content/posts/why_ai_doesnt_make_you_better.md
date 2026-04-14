@@ -13,7 +13,7 @@ A couple of caveats before we start: when I say AI here, I mean general-purpose 
 
 ## What AI provides
 
-Imagine picking up a guitar. You've been playing for a year, you know a handful of chords, and you make mistakes. Now someone hands you an amplifier. Suddenly you sound louder, you fill the room, you feel like more. But your mistakes are louder too. The amplifier didn't teach you anything — it just broadcast whatever was already there, good and bad.
+Imagine picking up a guitar. You've been playing for a year, you know a handful of chords, and you make mistakes. Now someone hands you an amplifier. Suddenly you sound louder, you fill the room, you feel like more. But your mistakes are louder too. The amplifier didn't teach you anything — it just broadcasts whatever was already there, good and bad.
 
 That's the most honest description I have of what AI does for you at work. It amplifies you. Your strengths and your weaknesses, in equal measure.
 
