@@ -5,7 +5,7 @@ date: 2024-12-22
 
 # Subscribe to AI by Mai
 
-I post on this blog sporadically when something strikes me, but I write **weekly on Substack** with more structured thoughts on AI, engineering, and everything in between.
+I post on this blog sporadically when something strikes me, but I write **Every two weeks on Substack** with more structured thoughts on AI, software engineering, security, and everything in between.
 
 Get my latest insights delivered straight to your inbox:
 
