@@ -36,4 +36,4 @@ I always read one technical and one non-technical book:
 
 ---
 
-*This page is updated regularly. Want to know what I was focused on before? Check the git history!*
+*This page is updated irregularly. Want to know what I was focused on before? Check the git history!*
