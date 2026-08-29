@@ -3,7 +3,6 @@ title: You Didn't Fix the Model. You Memorized the Failure.
 subtitle: Evaluation didn't get easier when the model got smarter — it just got easier to skip
 date: 2026-06-17
 tags:
-    - Draft
     - Machine Learning
     - Evaluation
     - LLMs
