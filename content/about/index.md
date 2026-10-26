@@ -18,7 +18,8 @@ Here I write about AI engineering and cybersecurity: practical, no hype.
 - **AI Research Engineer**, XBOW · 2026–now  
   AI for offensive security: safety, benchmarks and red teaming.
 - **Zapier** · 2025–2026  
-  LLM gateway serving 10M+ requests per day.
+  LLM gateway serving 10M+ requests per day to 10+ internal teams, critical to Zapier's day-to-day operations.  
+  Led a team through the migration, the technical requirements gathering and the comparison of LLM gateway providers.
 - **Staff Software Engineer, AI teams**, Phaidra · 2024–2025  
   AI agents that control industrial facilities like data centres in real time.  
   Reported directly to a director, led 10+ people across squads and initiatives, and worked closely with research.
