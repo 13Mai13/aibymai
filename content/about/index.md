@@ -11,6 +11,25 @@ I also write about AI and engineering at [AI by Mai](https://www.aibymai.dev/pos
 
 Past work spans ML models for cybersecurity, industrial control systems, and marketplace optimization and automation—from LLMs to real-time system optimization, across both platform and feature teams.
 
+[GitHub](https://github.com/13Mai13) · [LinkedIn](https://www.linkedin.com/in/maialen-berrondo-43197b94/)
+
+# Publications
+
+- [Detecting SQL Injection Attacks using Machine Learning](https://ceur-ws.org/Vol-3652/paper4.pdf)  
+  B. Moissinac, E. Saad, M. Clay, M. Berrondo (Okta) · CAMLIS 2023
+- [Application of Artificial Intelligence Techniques to Detect Fake News: A Review](https://doi.org/10.3390/electronics12245041)  
+  M. Berrondo-Otermin, A. Sarasa-Cabezuelo · Electronics, 2023 · PhD research
+
+# Talks
+
+- [¿Cómo montar un sistema de experimentación con mlflow?](https://charlas.2023.es.pycon.org/pycones-2023/speaker/9NMGY8/)  
+  PyConES 2023 · in Spanish
+
+# Open Source
+
+- [any-llm](https://github.com/mozilla-ai/any-llm) by Mozilla AI  
+  Requested custom header forwarding in the gateway ([#669](https://github.com/mozilla-ai/any-llm/issues/669)), shipped in [#707](https://github.com/mozilla-ai/any-llm/pull/707)
+
 # What I'm Focused On Now
 
 *Last updated: March 2026*
