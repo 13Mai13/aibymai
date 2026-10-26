@@ -5,11 +5,11 @@ date: 2024-12-22
 
 # About Me
 
-Engineer at heart. I've worn a few hats—software engineer, ML engineer, AI research engineer—but the common thread is a love for hard problems, whether they're hard because of scale or just inherently deeply complex.
+Hi, I'm Mai, a staff engineer based in Spain. I'm an AI research engineer at XBOW, working on AI for offensive security.
 
-I also write about AI and engineering at [AI by Mai](https://www.aibymai.dev/posts/) in a casual, practical way—no hype, just the interesting bits.
+Most of my career has been ML applied to security, built with production-grade robustness: from identity security at Auth0 to LLM security in my PhD.
 
-Past work spans ML models for cybersecurity, industrial control systems, and marketplace optimization and automation—from LLMs to real-time system optimization, across both platform and feature teams.
+Here I write about AI engineering and cybersecurity: practical, no hype.
 
 [GitHub](https://github.com/13Mai13) · [LinkedIn](https://www.linkedin.com/in/mai-berrondo-43197b94/)
 
@@ -46,6 +46,8 @@ Past work spans ML models for cybersecurity, industrial control systems, and mar
 
 - [¿Cómo montar un sistema de experimentación con mlflow?](https://charlas.2023.es.pycon.org/pycones-2023/speaker/9NMGY8/)  
   Talk at PyConES 2023 · in Spanish
+- [The Neural Maze](https://www.theneuralmaze.com/) by Miguel Otero Pedrido  
+  Guest articles: [Why AI doesn't make you better](https://www.theneuralmaze.com/p/why-ai-doesnt-make-you-better) and [You Didn't Fix the Model. You Memorized the Failure.](https://www.theneuralmaze.com/p/you-didnt-fix-the-model-you-memorized) · 2026
 - [any-llm](https://github.com/mozilla-ai/any-llm) by Mozilla AI  
   Requested custom header forwarding in the gateway ([#669](https://github.com/mozilla-ai/any-llm/issues/669)), shipped in [#707](https://github.com/mozilla-ai/any-llm/pull/707)
 - [inverted-index](https://github.com/13Mai13/inverted-index)  
