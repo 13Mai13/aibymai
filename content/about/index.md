@@ -11,7 +11,27 @@ I also write about AI and engineering at [AI by Mai](https://www.aibymai.dev/pos
 
 Past work spans ML models for cybersecurity, industrial control systems, and marketplace optimization and automation—from LLMs to real-time system optimization, across both platform and feature teams.
 
-[GitHub](https://github.com/13Mai13) · [LinkedIn](https://www.linkedin.com/in/maialen-berrondo-43197b94/)
+[GitHub](https://github.com/13Mai13) · [LinkedIn](https://www.linkedin.com/in/mai-berrondo-43197b94/)
+
+# Experience
+
+- **AI Research Engineer**, XBOW · 2026–now  
+  AI for offensive security: safety, benchmarks and red teaming.
+- **Zapier** · 2025–2026  
+  LLM gateway serving 10M+ requests per day.
+- **Staff Software Engineer, AI teams**, Phaidra · 2024–2025  
+  AI agents that control industrial facilities like data centres in real time.
+- **Auth0 / Okta** · 2021–2024  
+  Senior Data Scientist → Senior ML Engineer → Staff ML Engineer & Tech Lead  
+  Machine learning for identity security, from detection models to the MLOps platform that ships them.
+- **Data Scientist**, Glovo · 2020–2021  
+  End-to-end models for the courier app.
+
+# Education
+
+- **PhD**, Universidad Complutense de Madrid · 2023–now  
+  Started on fake news detection, restarting in 2026 on LLM security.
+- **MSc in Mathematics and Computation**, Universitat Oberta de Catalunya · 2019
 
 # Publications
 
@@ -20,15 +40,18 @@ Past work spans ML models for cybersecurity, industrial control systems, and mar
 - [Application of Artificial Intelligence Techniques to Detect Fake News: A Review](https://doi.org/10.3390/electronics12245041)  
   M. Berrondo-Otermin, A. Sarasa-Cabezuelo · Electronics, 2023 · PhD research
 
-# Talks
+# Talks, Open Source & Community
 
 - [¿Cómo montar un sistema de experimentación con mlflow?](https://charlas.2023.es.pycon.org/pycones-2023/speaker/9NMGY8/)  
-  PyConES 2023 · in Spanish
-
-# Open Source
-
+  Talk at PyConES 2023 · in Spanish
 - [any-llm](https://github.com/mozilla-ai/any-llm) by Mozilla AI  
   Requested custom header forwarding in the gateway ([#669](https://github.com/mozilla-ai/any-llm/issues/669)), shipped in [#707](https://github.com/mozilla-ai/any-llm/pull/707)
+- [inverted-index](https://github.com/13Mai13/inverted-index)  
+  Inverted index algorithm implemented in Rust
+- [Saturdays.AI](https://www.saturdays.ai/)  
+  Mentor since 2019, since the programme started in Donostia & Bilbao
+
+…and more on [GitHub](https://github.com/13Mai13?tab=repositories).
 
 # What I'm Focused On Now
 
