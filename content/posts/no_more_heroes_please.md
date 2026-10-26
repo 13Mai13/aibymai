@@ -2,9 +2,8 @@
 title: No more heroes please, let's talk about hero culture
 date: 2025-02-20
 tags:
-    - Software Development
-    - Culture
-    - Team Dynamics
+    - Software Engineering
+    - Engineering Culture
 ---
 
 I used to say that the only software development method I've seen successfully work is: **Incident driven development**. That means that if there is an incident it's due to A; then we all stop everything that we are doing to go fix A and the person who coded A or has most context about A solves it. We have a hero!!!

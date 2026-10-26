@@ -2,8 +2,7 @@
 title: "Why AI doesn't make you better"
 date: 2026-03-26
 tags:
-    - LLM
-    - Developer Productivity
+    - AI Engineering
     - Cognitive Load
     - Software Engineering
     - Engineering Culture

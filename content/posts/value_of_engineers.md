@@ -2,10 +2,7 @@
 title: "The Value of Engineers in the AI Era"
 date: 2025-04-25
 tags:
-    - LLM
-    - Developer Productivity
-    - Coding Assistance
-    - AI Tools
+    - AI Engineering
 ---
 
 # The Value of Engineers in the AI Era

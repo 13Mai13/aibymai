@@ -3,9 +3,7 @@ title: Is feature engineering dead?
 date: 2025-02-11
 tags:
     - Draft
-    - Feature Engineering
     - Machine Learning
-    - Model Optimization
 ---
 
 With all the recent boom of Large Lenguage Models (LLM's) and around decade of interest in Machine Learning (ML), I wonder where does data fall? It feels like nobody is actively talking about data curation, spacially data transformations for better modelling and more optimun models is not as cool as talking about the latest transformer architecture. 

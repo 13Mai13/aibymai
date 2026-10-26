@@ -1,8 +1,6 @@
 ---
 title: Now
 date: 2024-12-22
-tags:
-    - Now
 ---
 
 # About Me

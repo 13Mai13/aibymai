@@ -5,9 +5,7 @@ date: 2026-06-17
 tags:
     - Machine Learning
     - Evaluation
-    - LLMs
-    - Data Science
-    - MLOps
+    - AI Engineering
 ---
 
 A quick note before we start: this isn't an argument against using LLMs to solve real problems. It's an argument against using them as a substitute for thinking about whether the problem got solved.

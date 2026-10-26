@@ -2,8 +2,7 @@
 title: My work setup
 date: 2026-01-20
 tags:
-    - Software Development
-    - Workspace
+    - Software Engineering
     - Draft
 ---
 
