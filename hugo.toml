@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'AI by Mai'
 
 [params]
-  description = "Hi, I'm Mai. Engineer at heart: software, ML and AI research. I write about AI and engineering in a casual, practical way. No hype, just the interesting bits."
+  description = "Hi, I'm Mai. Staff engineer working on AI for offensive security. I write about AI engineering and cybersecurity: practical, no hype."
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
@@ -33,7 +33,7 @@ title = 'AI by Mai'
     link = 'https://github.com/13Mai13'
   [[params.social]]
     name = 'linkedIn'
-    link = 'https://www.linkedin.com/in/maialen-berrondo-43197b94/'
+    link = 'https://www.linkedin.com/in/mai-berrondo-43197b94/'
 
 [taxonomies]
   tag = "tags"
