@@ -3,11 +3,9 @@ title: About
 date: 2024-12-22
 ---
 
-# About Me
-
 Hi, I'm Mai, a staff engineer based in Spain. I'm an AI research engineer at XBOW, working on AI for offensive security.
 
-Most of my career has been ML applied to security, built with production-grade robustness: from identity security at Auth0 to LLM security in my PhD.
+I build robust AI systems, with security as the field I've decided to deep dive into: from identity security at Auth0 to LLM security in my PhD.
 
 Here I write about AI engineering and cybersecurity: practical, no hype.
 
@@ -54,6 +52,6 @@ Here I write about AI engineering and cybersecurity: practical, no hype.
 - [inverted-index](https://github.com/13Mai13/inverted-index)  
   Inverted index algorithm implemented in Rust
 - [Saturdays.AI](https://www.saturdays.ai/)  
-  Mentor since 2019, since the programme started in Donostia & Bilbao
+  Mentor since the programme started in Donostia & Bilbao in 2019
 
 …and more on [GitHub](https://github.com/13Mai13?tab=repositories).
