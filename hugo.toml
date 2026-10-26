@@ -22,6 +22,10 @@ title = 'AI by Mai'
     name = 'Newsletter'
     url = '/newsletter'
     weight = 3
+  [[menu.main]]
+    name = 'Tags'
+    url = '/tags'
+    weight = 4
 
 
   [[params.social]]
