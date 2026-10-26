@@ -20,10 +20,12 @@ Past work spans ML models for cybersecurity, industrial control systems, and mar
 - **Zapier** · 2025–2026  
   LLM gateway serving 10M+ requests per day.
 - **Staff Software Engineer, AI teams**, Phaidra · 2024–2025  
-  AI agents that control industrial facilities like data centres in real time.
+  AI agents that control industrial facilities like data centres in real time.  
+  Reported directly to a director, led 10+ people across squads and initiatives, and worked closely with research.
 - **Auth0 / Okta** · 2021–2024  
   Senior ML Engineer → Staff ML Engineer & Tech Lead  
-  Machine learning for identity security, from detection models to the MLOps platform that ships them.
+  Machine learning for identity security, from detection models to the MLOps platform that ships them.  
+  Joined as the 4th person on the team and ended up technically leading 3 teams, 12 people in total, reporting to a director.
 - **Data Scientist**, Glovo · 2020–2021  
   End-to-end models for the courier app.
 
