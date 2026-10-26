@@ -1,17 +1,14 @@
 {{ define "main" }}
  <section id="about">
    {{ if isset .Site.Params "description" }}
-     <p style="display: inline;">{{ .Site.Params.description }}</p>
-     <span style="display: inline;">You can find me on 
-       <a href="https://github.com/13Mai13" class="social-icon" target="_blank" style="text-decoration: none;">
-         <i class="fab fa-github"></i>
-       </a>
-       and
-       <a href="https://www.linkedin.com/in/maialen-berrondo-43197b94/" class = "social-icon" target="_blank" style="text-decoration: none;">
-         <i class="fab fa-linkedin"></i>
-       </a>,
-       also learn a bit more about me <a href="/about">here</a>.</span>
+     <p>{{ .Site.Params.description }}</p>
    {{ end }}
+   <p>
+     <a href="/about">More about me</a> ·
+     <a href="https://github.com/13Mai13" target="_blank" rel="noopener">GitHub</a> ·
+     <a href="https://www.linkedin.com/in/maialen-berrondo-43197b94/" target="_blank" rel="noopener">LinkedIn</a> ·
+     <a href="/newsletter">Newsletter</a>
+   </p>
  </section>
 
  <section id="writing">
@@ -70,11 +67,11 @@
    {{ end }}
  </section>
 
- <section id="newsletter" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #eee; text-align: center;">
+ <section id="newsletter">
    <span class="h2">Subscribe to the Newsletter</span>
-   <p>I post here sporadically, but I write <strong>weekly on Substack</strong> with structured thoughts on AI, engineering, and everything in between.</p>
-   <div style="display: flex; justify-content: center;">
-     <iframe src="https://aibymai.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white; max-width: 100%;" frameborder="0" scrolling="no"></iframe>
+   <p>I post here sporadically. In <strong>2027</strong> I'm starting a <strong>bi-weekly Substack</strong> with structured thoughts on AI engineering and cybersecurity. Subscribe now to get the first issue.</p>
+   <div class="substack-embed">
+     <iframe src="https://aibymai.substack.com/embed" width="480" height="320" frameborder="0" scrolling="no"></iframe>
    </div>
  </section>
 

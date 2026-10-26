@@ -3,8 +3,7 @@ title: The right amount of tech debt
 date: 2025-03-29
 tags:
     - Draft
-    - Software Design
-    - Tech Debt
+    - Software Engineering
 ---
 
 If there is a topic I'm sure that every engineer was come across with, is **TECH DEBT**. No matter if you are working in a 8 months startup of a 25 year old enterprise, you know what it is (or at least kind of), you've heard conversations on the retros and most likely they were repetive. 

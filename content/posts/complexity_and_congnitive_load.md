@@ -2,8 +2,8 @@
 title: Is complexity in machine learning systems justified? 
 date: 2025-01-24
 tags:
-    - Software Design
-    - Machine Learning System Design
+    - Software Engineering
+    - Machine Learning
     - Cognitive Load
 ---
 

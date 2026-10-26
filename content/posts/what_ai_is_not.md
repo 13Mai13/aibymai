@@ -4,7 +4,7 @@ date: 2025-02-19
 tags:
     - Draft
     - Machine Learning
-    - Artificial Intelligence
+    - AI Engineering
 ---
 
 Humans are lazy by nature. And Artificial Intelligence (AI), well mostly companies that want to sell AI to you, will tell you that that boiring task you don't want to do, well AI will do it for you!

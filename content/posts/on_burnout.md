@@ -3,8 +3,7 @@ title: On Burnout
 date: 2024-12-22
 tags:
     - Draft
-    - Burnout
-    - Opinion
+    - Engineering Culture
 ---
 
 # On Burnout 

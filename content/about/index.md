@@ -1,8 +1,6 @@
 ---
 title: Now
 date: 2024-12-22
-tags:
-    - Now
 ---
 
 # About Me
@@ -21,7 +19,7 @@ Inspired by [Derek Sivers' /now page](https://nownownow.com/about).
 
 **Current questions:**
 - Where's the line between AI assistance and actually getting better at something? I don't have a clean answer yet.
-- SSecurity × AI: enormous opportunity, but the risk surface is just as large. It's the space I keep coming back to.
+- Security × AI: enormous opportunity, but the risk surface is just as large. It's the space I keep coming back to.
 
 **Currently learning:**
 - The security/AI intersection — still early days, moves fast

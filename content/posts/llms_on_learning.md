@@ -3,8 +3,8 @@ title: Large Language Models (LLMs) on learning, cheating vs cheetsheets
 date: 2025-02-20
 tags:
     - Draft
-    - Software Development
-    - LLM
+    - Software Engineering
+    - AI Engineering
 ---
 
 As one cowrker said in a meeting: I don't remeber 30s after asking to an LLM what I asked, but I remeber for days if a human taught me something. 

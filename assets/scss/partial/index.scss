@@ -37,4 +37,19 @@
       display: inline;
     }
   }
+}#newsletter {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid $color-border;
+  text-align: center;
+}
+.substack-embed {
+  display: flex;
+  justify-content: center;
+
+  iframe {
+    max-width: 100%;
+    border: 1px solid $color-border;
+    background: white;
+  }
 }
