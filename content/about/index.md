@@ -22,7 +22,7 @@ Past work spans ML models for cybersecurity, industrial control systems, and mar
 - **Staff Software Engineer, AI teams**, Phaidra · 2024–2025  
   AI agents that control industrial facilities like data centres in real time.
 - **Auth0 / Okta** · 2021–2024  
-  Senior Data Scientist → Senior ML Engineer → Staff ML Engineer & Tech Lead  
+  Senior ML Engineer → Staff ML Engineer & Tech Lead  
   Machine learning for identity security, from detection models to the MLOps platform that ships them.
 - **Data Scientist**, Glovo · 2020–2021  
   End-to-end models for the courier app.
